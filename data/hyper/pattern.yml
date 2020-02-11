@@ -1,0 +1,7 @@
+alpha:
+  num_units: [512]
+  dropout: [0.1]
+beta:
+  num_units: [512]
+  dropout: [0.1]
+opt: ['adam']
