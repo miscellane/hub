@@ -2,7 +2,7 @@
   "type": "struct",
   "fields": [
     {
-      "name": "images",
+      "name": "filenames",
       "type": "string",
       "nullable": false,
       "metadata":
