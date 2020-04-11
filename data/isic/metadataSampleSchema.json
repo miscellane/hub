@@ -2,12 +2,12 @@
   "type": "struct",
   "fields": [
     {
-      "name": "filenames",
+      "name": "filestring",
       "type": "string",
       "nullable": false,
       "metadata":
       {
-        "comment": "The name of a zipped batch of ISIC Challenge 2019 images."
+        "comment": "The names of the files to be downloaded, which may or may not include extensions."
       }
     }
     ]
