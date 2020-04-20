@@ -1,0 +1,176 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "SUMLEV",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "..."
+      }
+    },
+    {
+      "name": "REGION",
+      "type": "integer",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "U.S.A. Region"
+      }
+    },
+    {
+      "name": "DIVISION",
+      "type": "integer",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "U.S.A. Divisions"
+      }
+    },
+    {
+      "name": "STATE",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "ISO3166 2 code of the U.S.A. state or territory."
+      }
+    },
+    {
+      "name": "NAME",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The name of the state or territory."
+      }
+    },
+    {
+      "name": "POPESTIMATE2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2019 population estimate of the state or territory."
+      }
+    },
+    {
+      "name": "BIRTH2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2019 births of the state or territory."
+      }
+    },
+    {
+      "name": "DEATHS2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2019 deaths of the state or territory."
+      }
+    },
+    {
+      "name": "NATURALINC2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Perhaps the natural 2019 increase in population per state or territory."
+      }
+    },
+    {
+      "name": "INTERNATIONALMIG2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2019 international migration of a state or territory."
+      }
+    },
+    {
+      "name": "DOMESTICMIG2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2019 domestic migration of a state or territory."
+      }
+    },
+    {
+      "name": "NETMIG2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2019 net migration of a state or territory."
+      }
+    },
+    {
+      "name": "RESIDUAL2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... state or territory."
+      }
+    },
+    {
+      "name": "RBIRTH2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... of a state or territory."
+      }
+    },
+    {
+      "name": "RDEATH2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... of state or territory."
+      }
+    },
+    {
+      "name": "RNATURALINC2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... of a state or territory."
+      }
+    },
+    {
+      "name": "RINTERNATIONALMIG2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... of a state or territory."
+      }
+    },
+    {
+      "name": "RDOMESTICMIG2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... of a state or territory."
+      }
+    },
+    {
+      "name": "RNETMIG2019",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "... of a state or territory."
+      }
+    }
+  ]
+}

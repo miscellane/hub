@@ -1,0 +1,41 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "STATE",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The ISO3166 2 code of the U.S.A. territory."
+      }
+    },
+    {
+      "name": "NAME",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The name of the territory."
+      }
+    },
+    {
+      "name": "POPESTIMATE2020JULY",
+      "type": "long",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The 2020 population estimate of the territory."
+      }
+    },
+    {
+      "name": "SOURCE",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The source of the population estimate."
+      }
+    }
+  ]
+}
