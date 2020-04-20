@@ -2,7 +2,7 @@
 
 <br>
 
-#### Details
+### Details
 
 <dl>
   <dt>States</dt>
@@ -13,9 +13,8 @@
 </dl>
 
 <br>
-<br>
 
-#### References
+### References
 
 * [Population Estimates API](https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html?#)
 * [State Population Totals](https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html)
