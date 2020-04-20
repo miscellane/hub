@@ -1,10 +1,12 @@
 ### U.S.A. Populations Data
 
+<br>
+
+#### Details
+
 <dl>
   <dt>States</dt>
-  <dd>The states.csv file is based on <a href="http://www2.census.gov/programs-surveys/popest/datasets/2010-2019/national/totals/nst-est2019-alldata.csv?#">nst-est2019-alldata.csv</a>; a copy of the file is available [in this repository](./nst-est2019-alldata.csv).</dd>
-
-  <br>
+  <dd>The states.csv file is based on <a href="http://www2.census.gov/programs-surveys/popest/datasets/2010-2019/national/totals/nst-est2019-alldata.csv?#">nst-est2019-alldata.csv</a>; a copy of the file is available [in this repository](nst-est2019-alldata.csv).</dd>
 
   <dt>Territories</dt>
   <dd>The content of the territories.csv is courtesy of CIA Factbook; the source field in the file encodes the link to a data's source</dd>
