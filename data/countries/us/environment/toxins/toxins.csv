@@ -2,6 +2,8 @@
 "row","row #"
 "facility","Facility"
 "trif_id","TRIF ID"
+"n_of_form_r","# of Form R"
+"n_of_form_a","# of Form A"
 "latitude","Latitude"
 "longitude","Longitude"
 "underground_injection_class_i_wells","Underground Injection Class I Wells"
