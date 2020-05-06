@@ -1,0 +1,13 @@
+{
+  "type": "struct",
+  "fields": [
+    {"name": "USPS", "type": "string", "nullable": false, "metadata": {"comment": "United States Postal Service State Abbreviation"}},
+    {"name": "GEOID", "type": "string", "nullable": false, "metadata": {"comment": "Geographic Identifier.  Fully concatenated geographic code, i.e., State FIPS, County FIPS, and census tract number."}},
+    {"name": "ALAND", "type": "double", "nullable": false, "metadata": {"comment": "Land Area, square metres."}},
+    {"name": "AWATER", "type": "double", "nullable": false, "metadata": {"comment": "Water Area, square metres."}},
+    {"name": "ALAND_SQMI", "type": "double", "nullable": false, "metadata": {"comment": "Land Area, square miles."}},
+    {"name": "AWATER_SQMI", "type": "double", "nullable": false, "metadata": {"comment": "Water Area, square miles."}},
+    {"name": "INTPTLAT", "type": "double", "nullable": false, "metadata": {"comment": "Latitude, decimal degrees.  The first character is blank or a dash, denoting North or South latitude, respectively."}},
+    {"name": "INTPTLONG", "type": "double", "nullable": false, "metadata": {"comment": "Longitude, decimal degrees.  The first character is blank or a dash, denoting East or West longitude, respectively."}}
+  ]
+}
