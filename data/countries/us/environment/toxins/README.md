@@ -27,9 +27,11 @@ The fields
 
 ### TRI Databases
 
+For toxins release data obtained via the tables of
+
 * https://www.epa.gov/enviro/tri-reported-chemical-information-subject-area-model
 
-Depends on
+Fields of titerest
 
 * [releases](releases.csv)
 
@@ -37,6 +39,10 @@ Depends on
 
 ### NAICS Data
 
-The fields
+Obtained via TR_FACILITY & TRI_SUBMISSION_NAICS of
+
+* https://www.epa.gov/enviro/tri-reported-chemical-information-subject-area-model
+
+Fields of interest
 
 * [naics](naics.csv)
