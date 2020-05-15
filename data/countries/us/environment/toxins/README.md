@@ -31,7 +31,7 @@ For toxins release data obtained via the tables of
 
 * https://www.epa.gov/enviro/tri-reported-chemical-information-subject-area-model
 
-Fields of titerest
+Fields of interest
 
 * [releases](releases.csv)
 
