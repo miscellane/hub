@@ -1,26 +1,27 @@
-### U.S.A. Toxins
+## U.S.A. Toxins
 
-<br>
 
 ### TRI Explorer
 
 * https://enviro.epa.gov/triexplorer/tri_release.facility
 
-Depends on the files
+The fields available and their descriptions
 
-* offsite
-* onsite
-* all; previously named toxins
+* [offsite](./sites/offsite.csv)
+* [onsite](./sites/onsite.csv)
+* [all](./sites/all.csv); previously named toxins
 
 <br>
 
 ### Facilities
 
+Due to the incomplete nature of the facilities data within the latest TRI Databases set-up, facilities data is garnered via
+
 * https://enviro.epa.gov/triexplorer/tri_release.facility
 
-Depends on
+The fields
 
-* facilities; previously named firms
+* [facilities](facilities.csv); previously named firms
 
 <br>
 
@@ -30,4 +31,12 @@ Depends on
 
 Depends on
 
-* releases
+* [releases](releases.csv)
+
+<br>
+
+### NAICS Data
+
+The fields
+
+* [naics](naics.csv)
