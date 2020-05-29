@@ -1,5 +1,7 @@
 ## Toxins
 
+Data notes ...
+
 <br>
 
 ### Facilities
@@ -27,7 +29,6 @@ Fields of interest
 * [facilitiesServices](facilitiesServices.csv)
 
 <br>
-<br>
 
 ### Releases
 
@@ -52,7 +53,6 @@ Fields of interest
 
 * [releases](releases.csv)
 
-<br>
 <br>
 
 ### NAICS Data
