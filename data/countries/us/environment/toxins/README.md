@@ -4,9 +4,8 @@
 
 ### Facilities
 
-<br>
 
-##### Via TRI Explorer
+#### Via TRI Explorer
 
 Due to the incomplete nature of the facilities data of TRI Web Services, facilities data is also garnered via
 
@@ -18,7 +17,7 @@ Fields read
 
 <br>
 
-##### Via TRI Web Services
+#### Via TRI Web Services
 
 Obtained via TRI_FACILITY
 
@@ -33,9 +32,7 @@ Fields of interest
 
 ### Releases
 
-<br>
-
-##### Via TRI Explorer
+#### Via TRI Explorer
 
 * https://enviro.epa.gov/triexplorer/tri_release.facility
 
@@ -47,7 +44,7 @@ The fields available and their descriptions
 
 <br>
 
-##### Via TRI Web Services
+#### Via TRI Web Services
 
 For toxins release data obtained via the tables of
 
