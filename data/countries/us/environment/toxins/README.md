@@ -1,7 +1,41 @@
-## U.S.A. Toxins
+## Toxins
 
+<br>
 
-### TRI Explorer
+### Facilities
+
+<br>
+
+##### Via TRI Explorer
+
+Due to the incomplete nature of the facilities data of TRI Web Services, facilities data is also garnered via
+
+* https://enviro.epa.gov/triexplorer/tri_release.facility
+
+Fields read
+
+* [facilities](facilities.csv); previously named firms
+
+<br>
+
+##### Via TRI Web Services
+
+Obtained via TRI_FACILITY
+
+* https://data.epa.gov/efservice/TRI_FACILITY
+
+Fields of interest
+
+* [facilitiesServices](facilitiesServices.csv)
+
+<br>
+<br>
+
+### Releases
+
+<br>
+
+##### Via TRI Explorer
 
 * https://enviro.epa.gov/triexplorer/tri_release.facility
 
@@ -13,19 +47,7 @@ The fields available and their descriptions
 
 <br>
 
-### Facilities
-
-Due to the incomplete nature of the facilities data within the latest TRI Databases set-up, facilities data is garnered via
-
-* https://enviro.epa.gov/triexplorer/tri_release.facility
-
-The fields
-
-* [facilities](facilities.csv); previously named firms
-
-<br>
-
-### TRI Databases
+##### Via TRI Web Services
 
 For toxins release data obtained via the tables of
 
@@ -35,6 +57,7 @@ Fields of interest
 
 * [releases](releases.csv)
 
+<br>
 <br>
 
 ### NAICS Data
