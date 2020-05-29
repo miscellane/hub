@@ -15,7 +15,6 @@ Fields read
 
 * [facilities](facilities.csv); previously named firms
 
-<br>
 
 #### Via TRI Web Services
 
@@ -42,7 +41,6 @@ The fields available and their descriptions
 * [onsite](./sites/onsite.csv)
 * [all](./sites/all.csv); previously named toxins
 
-<br>
 
 #### Via TRI Web Services
 
