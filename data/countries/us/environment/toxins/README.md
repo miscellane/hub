@@ -4,32 +4,6 @@ Data notes ...
 
 <br>
 
-### Facilities
-
-
-#### Via TRI Explorer
-
-Due to the incomplete nature of the facilities data of TRI Web Services, facilities data is also garnered via
-
-* https://enviro.epa.gov/triexplorer/tri_release.facility
-
-Fields read
-
-* [facilities](facilities.csv); previously named firms
-
-
-#### Via TRI Web Services
-
-Obtained via TRI_FACILITY
-
-* https://data.epa.gov/efservice/TRI_FACILITY
-
-Fields of interest
-
-* [facilitiesServices](facilitiesServices.csv)
-
-<br>
-
 ### Releases
 
 #### Via TRI Explorer

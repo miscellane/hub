@@ -1,4 +1,4 @@
-### U.S.A. Industries
+### Industries
 
 References:
 
