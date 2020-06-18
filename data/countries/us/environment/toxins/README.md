@@ -2,8 +2,6 @@
 
 Data notes ...
 
-<br>
-
 ### Releases
 
 #### Via TRI Explorer
@@ -26,15 +24,3 @@ For toxins release data obtained via the tables of
 Fields of interest
 
 * [releases](releases.csv)
-
-<br>
-
-### NAICS Data
-
-Obtained via TR_FACILITY & TRI_SUBMISSION_NAICS of
-
-* https://www.epa.gov/enviro/tri-reported-chemical-information-subject-area-model
-
-Fields of interest
-
-* [naics](naics.csv)
