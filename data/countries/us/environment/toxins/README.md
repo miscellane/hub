@@ -3,11 +3,8 @@
 Data notes ...
 
 <br>
-<br>
 
 ### Releases
-
-<br>
 
 #### Sites
 
@@ -20,8 +17,6 @@ The fields available and their descriptions
 * [offsite](./sites/offsite.csv)
 * [onsite](./sites/onsite.csv)
 * [all](./sites/all.csv); previously named toxins
-
-<br>
 
 #### Summaries
 
