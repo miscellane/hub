@@ -2,9 +2,13 @@
 
 Data notes ...
 
+<br>
+
 ### Releases
 
-#### Via TRI Explorer
+#### Sites
+
+The TRI Explorer option; for details missing in the much more straightforward [TRI Model](https://www.epa.gov/enviro/tri-reported-chemical-information-subject-area-model)
 
 * https://enviro.epa.gov/triexplorer/tri_release.facility
 
@@ -14,13 +18,6 @@ The fields available and their descriptions
 * [onsite](./sites/onsite.csv)
 * [all](./sites/all.csv); previously named toxins
 
+#### Summaries
 
-#### Via TRI Web Services
-
-For toxins release data obtained via the tables of
-
-* https://www.epa.gov/enviro/tri-reported-chemical-information-subject-area-model
-
-Fields of interest
-
-* [releases](releases.csv)
+Summaries by state are stored in [data.zip](./releases/data.zip).  The field types, and more, of each file in data.zip, are outlined in [attributes.csv](./releases/attributes.csv)
