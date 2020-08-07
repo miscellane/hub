@@ -1,0 +1,10 @@
+"REGION","DIVISION","REGIONFP","DIVISIONFP"
+"Northeast","New England",1,1
+"Northeast","Middle Atlantic",1,2
+"Midwest","East North Central",2,3
+"Midwest","West North Central",2,4
+"South","South Atlantic",3,5
+"South","East South Central",3,6
+"South","West South Central",3,7
+"West","Mountain",4,8
+"West","Pacific",4,9
