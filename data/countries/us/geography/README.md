@@ -2,6 +2,10 @@
 
 <br>
 
+Study the contents of https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2019_Gazetteer/
+
+<br>
+
 ### References
 
 * A variety of U.S.A. [gazetteer data](https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html)
