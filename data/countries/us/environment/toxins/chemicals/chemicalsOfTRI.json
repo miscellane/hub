@@ -1,0 +1,23 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "tri_chem_id",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The Toxics Release Inventory code of a chemical"
+      }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The chemical name"
+      }
+    }
+  ]
+}
