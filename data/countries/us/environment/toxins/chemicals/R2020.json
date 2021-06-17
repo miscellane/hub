@@ -1,0 +1,23 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "CASRN",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The Chemical Abstracts Service Registry Number of a chemical"
+      }
+    },
+    {
+      "name": "chemical_name",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The chemical name"
+      }
+    }
+  ]
+}
