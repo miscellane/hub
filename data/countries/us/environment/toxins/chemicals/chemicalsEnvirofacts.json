@@ -1,0 +1,184 @@
+{
+  "type": "struct",
+  "fields": [
+    {
+      "name": "TRI_CHEM_INFO.TRI_CHEM_ID",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Assigned chemical codes.  In most cases the TRI_CHEM_ID is a formatted Chemical Abstract Service Registry Number"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.CHEM_NAME",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The official name of a toxic chemical, a toxic chemical mixture, or a chemical category"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.ACTIVE_DATE",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The first year from whence a chemical must be reported to the Toxics Release Inventory"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.INACTIVE_DATE",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "The final compulsory reporting year"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.CAAC_IND",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates whether the chemical is reportable under the Clean Air Act. 1: Yes, 0: No"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.CARC_IND",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates whether the chemical is reportable as a carcinogen under the Cancer Assessment Review Committee.  1: Yes, 0: No"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.R3350_IND",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates whether the chemical is reportable under Regulation 3350.  1: Yes, 0: No"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.METAL_IND",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates whether the chemical is a metal or metal compound.  1: Yes, 0: No"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.FEDS_IND",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates whether the chemical is a non-Section 313 chemical submitted by a federal facility under Executive Order 12856. 1: Yes, 0: No"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.CLASSIFICATION",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates the classification of the chemical. Chemicals can be classified as either a 1. Dioxin or Dioxin-like compounds, 2. Persistent, Bioaccumulative & Toxic chemical, or 3. general Emergency Planning & Community Right-to-Know Act Section 313 chemical. 0: TRI, 1: PBT, 2: Dioxin"
+      }
+    },{
+      "name": "TRI_CHEM_INFO.PBT_START_YEAR",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "Indicates the year that a PBT (Persistent, Bioaccumulative & Toxic) chemical was designated as an EPCRA (Emergency Planning & Community Right-to-Know Act) Section 313 PBT Chemical"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.PBT_END_YEAR",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "Indicates the year that a PBT (Persistent, Bioaccumulative and Toxic) chemical was dropped as an EPCRA (Emergency Planning & Community Right-to-Know Act) Section 313 PBT Chemical"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.NO_DECIMALS",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "Indicates the maximum number of decimals that can be used to quantify a chemical."
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.UNIT_OF_MEASURE",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Indicates the unit of measure used to quantify the chemical. Pounds or Grams"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.CAS_REGISTRY_NUMBER",
+      "type": "string",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Unique numerical identifier assigned by Chemical Abstracts Service to every chemical substance described in the open scientific literature, including organic and inorganic compounds, minerals, isotopes, alloys and nonstructurable materials."
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.SRS_ID",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "The unique identifier assigned to a substance for internal tracking within Environmental Protection Agency systems."
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.DEFAULT_PERCENTAGE_TO_81C",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "The assigned percent of a Publicly Owned Treatment Works transfer that would be considered part of 8.1.C"
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.DEFAULT_PERCENTAGE_TO_81D",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "The assigned percent of a Publicly Owned Treatment Works transfer that would be considered part of 8.1.D.  According to EPA, the plan is to use this percentage from 2014 onward when calculating Publicly Owned Treatment Works releases, off-site releases, and total releases."
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.DEFAULT_PERCENTAGE_TO_87",
+      "type": "double",
+      "nullable": true,
+      "metadata":
+      {
+        "comment": "The assigned percent of a Publicly Owned Treatment Works transfer that would be considered part of 8.7.  According to EPA, the plan is to use this percentage from 2014 onward when calculating total amount treated off-site."
+      }
+    },
+    {
+      "name": "TRI_CHEM_INFO.PFAS_IND",
+      "type": "integer",
+      "nullable": false,
+      "metadata":
+      {
+        "comment": "Per- and polyfluoroalkyl substances (PFAS) indicator.  Probably 1: Yes, 0: No"
+      }
+    }
+  ]
+}
