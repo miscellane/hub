@@ -1,6 +1,6 @@
 <br>
 
-**Event Duration Monitoring**
+# Event Duration Monitoring
 
 <br>
 
