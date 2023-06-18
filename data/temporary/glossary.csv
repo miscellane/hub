@@ -1,0 +1,4 @@
+term,definition,preimage,names
+Precision,$\large \frac{tp}{tp + fp}$,$[0 \; 1]$,Precision<br>Positive Predictive Value
+True Positive Rate,$\large \frac{tp}{tp + fn}$,$[0 \; 1]$,True Positive Rate<br>Sensitivity<br>Recall
+True Negative Rate,$\large \frac{tn}{tn + fp}$,$[0 \; 1]$,True Negative Rate<br>Specificity<br>Selectivity
