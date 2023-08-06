@@ -1,7 +1,6 @@
 <br>
 
-**LINUX**
-
+**LINUX Environment Notes**
 
 <br>
 
