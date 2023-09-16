@@ -59,7 +59,7 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
 
 html_theme_options = {
     'color_scheme': '',
-    'canonical_url': '',
+    'canonical_url': 'https://thirdreading.github.io/hub/',
     'analytics_id': '',
     'style_external_links': False,
     'collapse_navigation': True,
@@ -67,7 +67,7 @@ html_theme_options = {
     'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False,
-    'github_url': 'https://www.github.com/greyhypotheses',
+    'github_url': 'https://www.github.com/thirdreading/hub',
     'logo_mobile': '_static/logo.svg'
 }
 
@@ -78,8 +78,10 @@ html_context = {
         'menu': [
             {'title': 'Introduction',
              'url': 'introduction/introduction.html'},
-            {'title': 'GitHub',
-             'url': 'https://www.github.com/thirdreading/hub'}
+            {'title': 'Data',
+             'url': 'https://github.com/thirdreading/hub/tree/master/data'},
+            {'title': 'Search',
+             'url': 'search.html'}
         ]
     }
 }

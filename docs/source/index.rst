@@ -7,21 +7,20 @@
 .. image:: _static/logo.svg
 
 
-Welcome to Hub's documentation!
-===============================
+Hub
+===
+
 
 .. container:: .large
 
-   A hub of data sets ...
+   A data sets hub ...
+
 
 .. container:: .buttons
 
-   `Introduction <https://thirdreading.github.io>`_
-   `GitHub <https://www.github.com/thirdreading/hub>`_
-
-
-* :ref:`genindex`
-* :ref:`search`
+   `Introduction <introduction/introduction.html>`_
+   `Data <https://github.com/thirdreading/hub/tree/master/data>`_
+   :ref:`genindex`
 
 
 .. toctree::
@@ -30,3 +29,23 @@ Welcome to Hub's documentation!
    :hidden:
 
    introduction/introduction
+
+
+.. raw:: html
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+..
+   Comment
+   :ref:`genindex`
+   :ref:`search`
+

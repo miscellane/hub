@@ -11,4 +11,4 @@ dependencies:
   - pip
   - pip:
       - sphinx
-      - https://github.com/revitron/revitron-sphinx-theme/archive/master.zip
+      - https://github.com/thirdreading/hub/raw/master/software/python/revitron-sphinx-theme-master.zip
