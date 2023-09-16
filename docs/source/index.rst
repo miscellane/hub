@@ -7,19 +7,19 @@
 .. image:: _static/logo.svg
 
 
-Welcome to Hub's documentation!
-===============================
+Hub
+===
 
 
 .. container:: .large
 
-   A hub of data sets ...
+   A data sets hub ...
 
 
 .. container:: .buttons
 
    `Introduction <introduction/introduction.html>`_
-   `GitHub <https://www.github.com/thirdreading/hub>`_
+   `Data <https://github.com/thirdreading/hub/tree/master/data>`_
    :ref:`genindex`
 
 
