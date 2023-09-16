@@ -76,11 +76,11 @@ html_logo = '_static/logo.svg'
 html_context = {
     'landing_page': {
         'menu': [
-            {'title': 'INTRODUCTION',
+            {'title': 'Introduction',
              'url': 'introduction/introduction.html'},
-            {'title': 'DATA',
+            {'title': 'Data',
              'url': 'https://github.com/thirdreading/hub/tree/master/data'},
-            {'title': 'SEARCH',
+            {'title': 'Search',
              'url': 'search.html'}
         ]
     }
