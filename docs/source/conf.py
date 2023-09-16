@@ -67,7 +67,7 @@ html_theme_options = {
     'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False,
-    'github_url': 'https://www.github.com/greyhypotheses',
+    'github_url': 'https://www.github.com/thirdreading/hub',
     'logo_mobile': '_static/logo.svg'
 }
 
