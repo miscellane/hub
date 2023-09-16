@@ -17,11 +17,9 @@ Welcome to Hub's documentation!
    `Introduction <https://thirdreading.github.io>`_
    `GitHub <https://www.github.com/thirdreading/hub>`_
 
-
-
-Indices and tables
-==================
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Introduction:
+
+* :ref:`genindex`
+* :ref:`search`
