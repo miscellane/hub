@@ -20,13 +20,18 @@ Welcome to Hub's documentation!
    `GitHub <https://www.github.com/thirdreading/hub>`_
 
 
-* :ref:`genindex`
-* :ref:`search`
-
-
 .. toctree::
    :maxdepth: 2
    :caption: Introduction:
    :hidden:
 
    introduction/introduction
+
+.. raw:: html
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+* :ref:`genindex` &nbsp; :ref:`search`
