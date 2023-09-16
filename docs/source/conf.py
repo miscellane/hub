@@ -76,10 +76,10 @@ html_logo = '_static/logo.svg'
 html_context = {
     'landing_page': {
         'menu': [
-            {'title': 'Introduction',
+            {'title': 'INTRODUCTION',
              'url': 'introduction/introduction.html'},
-            {'title': 'GitHub',
-             'url': 'https://www.github.com/thirdreading/hub'}
+            {'title': 'DATA',
+             'url': 'https://github.com/thirdreading/hub/tree/master/data'}
         ]
     }
 }
