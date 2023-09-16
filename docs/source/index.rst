@@ -10,13 +10,13 @@
 Welcome to Hub's documentation!
 ===============================
 
-.. container:: .large
 
+.. container:: .large
    A hub of data sets ...
 
-.. container:: .buttons
 
-   `Introduction <https://thirdreading.github.io>`_
+.. container:: .buttons
+   `Introduction <https://thirdreading.github.io/hub>`_
    `GitHub <https://www.github.com/thirdreading/hub>`_
 
 
@@ -27,11 +27,18 @@ Welcome to Hub's documentation!
 
    introduction/introduction
 
+
 .. raw:: html
-
   <br>
   <br>
   <br>
   <br>
 
-* :ref:`genindex` &nbsp; :ref:`search`
+  <br>
+  <br>
+  <br>
+  <br>
+
+=============== =============
+:ref:`genindex` :ref:`search`
+=============== =============
