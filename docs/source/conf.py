@@ -79,7 +79,9 @@ html_context = {
             {'title': 'INTRODUCTION',
              'url': 'introduction/introduction.html'},
             {'title': 'DATA',
-             'url': 'https://github.com/thirdreading/hub/tree/master/data'}
+             'url': 'https://github.com/thirdreading/hub/tree/master/data'},
+            {'title': 'SEARCH',
+             'url': 'search.html'}
         ]
     }
 }
