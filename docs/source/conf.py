@@ -59,7 +59,7 @@ html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
 
 html_theme_options = {
     'color_scheme': '',
-    'canonical_url': '',
+    'canonical_url': 'https://thirdreading.github.io/hub/',
     'analytics_id': '',
     'style_external_links': False,
     'collapse_navigation': True,
