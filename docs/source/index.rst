@@ -20,6 +20,7 @@ Welcome to Hub's documentation!
 
    `Introduction <https://thirdreading.github.io/hub>`_
    `GitHub <https://www.github.com/thirdreading/hub>`_
+   :ref:`genindex`
 
 
 .. toctree::
@@ -41,6 +42,10 @@ Welcome to Hub's documentation!
   <br>
   <br>
 
-=============== =============
-:ref:`genindex` :ref:`search`
-=============== =============
+
+
+..
+   Comment
+   :ref:`genindex`
+   :ref:`search`
+
