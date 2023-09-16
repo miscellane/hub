@@ -77,7 +77,7 @@ html_context = {
     'landing_page': {
         'menu': [
             {'title': 'Introduction',
-             'url': 'https://thirdreading.github.io/docs/build/html/introduction/introduction.html'},
+             'url': 'introduction/introduction.html'},
             {'title': 'GitHub',
              'url': 'https://www.github.com/thirdreading/hub'}
         ]
