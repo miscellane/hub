@@ -18,7 +18,7 @@ Welcome to Hub's documentation!
 
 .. container:: .buttons
 
-   `Introduction <https://thirdreading.github.io/hub>`_
+   `Introduction <introduction/introduction.html>`_
    `GitHub <https://www.github.com/thirdreading/hub>`_
    :ref:`genindex`
 
