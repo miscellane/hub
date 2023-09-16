@@ -3,7 +3,9 @@
    This page should, at least, contain the root
    <table of contents tree> directive.
 
+
 .. image:: _static/logo.svg
+
 
 Welcome to Hub's documentation!
 ===============================
@@ -17,9 +19,14 @@ Welcome to Hub's documentation!
    `Introduction <https://thirdreading.github.io>`_
    `GitHub <https://www.github.com/thirdreading/hub>`_
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Introduction:
 
 * :ref:`genindex`
 * :ref:`search`
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Introduction:
+   :hidden:
+
+   introduction/introduction
