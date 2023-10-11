@@ -1,0 +1,12 @@
+[
+  {
+    "keys": ["id", "parent", "collapsed", "name"],
+    "data": [["A",null ,null, "alpha"],
+            ["B", "A", true, "beta"],
+            ["C", "B", null, "xi"],
+            ["E", "B", null, "epsilon"],
+            ["D", "A", null, "delta"],
+            ["F", "E", null, "phi"],
+            ["G", "E", null, "gamma"]]
+  }
+]
