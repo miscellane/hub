@@ -224,7 +224,7 @@ Next, within a new terminal
 <br>
 <br>
 
-### A sample Tensorflow/<abbr>GPU</abbr> virtual environment
+### A sample Tensorflow/<abbr title="Graphics Processing Unit">GPU</abbr> virtual environment
 
 Foremost, a virtual conda environment for tensorflow - within a WSL (Windows Subsystem for Linux) operating system ...
 
