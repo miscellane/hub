@@ -250,9 +250,9 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 Next, within a new terminal
 
 ```shell
-  conda init bash
-  conda config --set auto_activate_base false
-  sudo chown -R $USER:$USER /opt/miniconda3
+conda init bash
+conda config --set auto_activate_base false
+sudo chown -R $USER:$USER /opt/miniconda3
 ```
 
 <br>
