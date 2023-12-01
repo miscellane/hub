@@ -232,7 +232,7 @@ $ Do you wish the installer to initialize Miniconda3 by running conda init?
 Open `/etc/profile`, i.e.,
 
 ```shell
-  sudo vi profile
+sudo vi profile
 ```
 
 and append
