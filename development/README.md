@@ -93,14 +93,14 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 
 ### NVIDIA Docker
 
-[Addressing possible conflicts](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html) between NVIDIA Docker & NVIDIA Container Toolkit
+**Initially**, [address possible conflict points](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html) between NVIDIA Docker & NVIDIA Container Toolkit
 
 ```shell
 sudo rm /etc/apt/sources.list.d/nvidia-docker.list && rm /etc/apt/sources.list.d/nvidia-container-toolkit.list && \
 	rm /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && rm /usr/share/keyrings/nvidia-docker-keyring.gpg
 ```
 
-Then
+In addition to `/etc/apt/sources.list.d/` & `/usr/share/keyrings/`, the directory `/etc/apt/trusted.gpg.d` will sometimes be of interest.  **Then**
 
 ```shell
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
@@ -114,7 +114,7 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
       sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 ```
 
-Then
+Next
 
 ```shell
 sudo apt update
