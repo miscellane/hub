@@ -86,7 +86,7 @@ Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operati
 
 ### NVIDIA Docker
 
-Addressing conflicts: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html
+[Addressing possible conflicts](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html) between NVIDIA Docker & NVIDIA Container Toolkit
 
 ```shell
 sudo rm /etc/apt/sources.list.d/nvidia-docker.list && rm /etc/apt/sources.list.d/nvidia-container-toolkit.list && \
