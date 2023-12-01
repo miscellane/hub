@@ -86,7 +86,7 @@ Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operati
 
 ### NVIDIA Container Toolkit
 
-[**Setting Up NVIDIA Container Toolkit**](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit) outlines the setting-up steps.  Foremost, set up the package directory & <abbr title="GNU Privacy Guard">GPG</abbr> key
+[**Setting Up NVIDIA Container Toolkit**](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit) outlines the setting-up steps; [installing](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).  Foremost, set up the package directory & <abbr title="GNU Privacy Guard">GPG</abbr> key
 
 ```shell
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
@@ -152,8 +152,30 @@ cat /etc/os-release
 
 prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a` or `cat /etc/issue`.
 
+<br>
+<br>
 
- 
+### NVIDIA Docker
+
+Addressing conflicts: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html
+
+```shell
+    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+    echo $distribution
+    curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
+        sudo gpg --dearmor -o /usr/share/keyrings/nvidia-docker-keyring.gpg
+    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
+        sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-docker-keyring.gpg] https://#g' | \
+        sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+```
+
+Then
+
+```shell
+sudo apt update
+sudo apt install -y nvidia-docker2
+```
+
 <br>
 <br>
 
