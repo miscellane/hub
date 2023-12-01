@@ -129,11 +129,11 @@ sudo apt install -y nvidia-docker2
 [**Setting Up NVIDIA Container Toolkit**](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit) outlines the setting-up steps; [installing](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).  Foremost, set up the package directory & <abbr title="GNU Privacy Guard">GPG</abbr> key
 
 ```shell
-    curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
-      sudo gpg --dearmour -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg     
-    curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
-      sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
-        sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
+  sudo gpg --dearmour -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg     
+curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+  sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+    sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 ```
 
 Next install `nvidia-container-toolkit`
