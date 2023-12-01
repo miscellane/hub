@@ -9,7 +9,7 @@ Especially [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us
     sudo apt upgrade
 ```
 
-Inspecting the <abbr title="GNU Privacy Guard">GPG</abbr> keys
+Inspecting the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys
 
 ```shell
 gpg --list-keys
