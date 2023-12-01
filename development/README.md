@@ -92,7 +92,7 @@ Addressing conflicts: https://docs.nvidia.com/datacenter/cloud-native/container-
     distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
     echo $distribution
     curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
-        sudo gpg --dearmor -o /usr/share/keyrings/nvidia-docker-keyring.gpg
+        sudo gpg --dearmour -o /usr/share/keyrings/nvidia-docker-keyring.gpg
     curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
         sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-docker-keyring.gpg] https://#g' | \
         sudo tee /etc/apt/sources.list.d/nvidia-docker.list
