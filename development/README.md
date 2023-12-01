@@ -103,13 +103,15 @@ sudo rm /etc/apt/sources.list.d/nvidia-docker.list && rm /etc/apt/sources.list.d
 Then
 
 ```shell
-    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-    echo $distribution
-    curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
-        sudo gpg --dearmour -o /usr/share/keyrings/nvidia-docker-keyring.gpg
-    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
-        sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-docker-keyring.gpg] https://#g' | \
-          sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+
+echo $distribution
+
+curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
+    sudo gpg --dearmour -o /usr/share/keyrings/nvidia-docker-keyring.gpg
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
+    sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-docker-keyring.gpg] https://#g' | \
+      sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 ```
 
 Then
