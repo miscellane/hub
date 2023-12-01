@@ -84,18 +84,39 @@ Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operati
 <br>
 <br>
 
-### NVIDIA Container Toolkit
+### NVIDIA Docker
+
+Addressing conflicts: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html
+
+```shell
+    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+    echo $distribution
+    curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
+        sudo gpg --dearmor -o /usr/share/keyrings/nvidia-docker-keyring.gpg
+    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
+        sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-docker-keyring.gpg] https://#g' | \
+        sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+```
+
+Then
+
+```shell
+sudo apt update
+sudo apt install -y nvidia-docker2
+```
+
+<br>
+<br>
+
+### NVIDIA [Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html)
 
 [**Setting Up NVIDIA Container Toolkit**](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit) outlines the setting-up steps; [installing](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-the-nvidia-container-toolkit).  Foremost, set up the package directory & <abbr title="GNU Privacy Guard">GPG</abbr> key
 
 ```shell
-distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-echo $distribution
-
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
-  sudo gpg --dearmour -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
-  
-curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
+  sudo gpg --dearmour -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg 
+
+curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
   sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
     sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
 ```
@@ -132,7 +153,7 @@ e.g.,
 docker run --rm --gpus all nvidia/cuda:12.2.0-base-ubuntu20.04 nvidia-smi
 ```
 
-Important, ensure that a [`nvidia/cuda` tag]( https://hub.docker.com/r/nvidia/cuda/tags) that is inline with the machine's CUDA & Ubuntu versions exists.  The machine's cuda version is retrievable via
+Important, ensure that a [`nvidia/cuda` tag](https://hub.docker.com/r/nvidia/cuda/tags) that is inline with the machine's CUDA & Ubuntu versions exists.  The machine's cuda version is retrievable via
 
 ```shell
 nvidia-smi
@@ -154,31 +175,6 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 
 <br>
 <br>
-
-### NVIDIA Docker
-
-Addressing conflicts: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html
-
-```shell
-    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-    echo $distribution
-    curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
-        sudo gpg --dearmor -o /usr/share/keyrings/nvidia-docker-keyring.gpg
-    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
-        sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-docker-keyring.gpg] https://#g' | \
-        sudo tee /etc/apt/sources.list.d/nvidia-docker.list
-```
-
-Then
-
-```shell
-sudo apt update
-sudo apt install -y nvidia-docker2
-```
-
-<br>
-<br>
-
 
 ## Virtual Environments
 
