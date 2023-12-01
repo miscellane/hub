@@ -25,7 +25,6 @@ Apriori
 
 <br>
 <br>
-<br>
 
 ## GNU `wget`
 
@@ -39,8 +38,6 @@ sudo apt install wget ca-certificates
 
 <br>
 <br>
-<br>
-
 
 ## GIT
 
@@ -68,7 +65,7 @@ Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-
 
 <br>
 <br>
-<br>
+
 
 ## Docker
 
@@ -156,7 +153,7 @@ cat /etc/os-release
 prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a` or `cat /etc/issue`.
 
 
-<br> 
+ 
 <br>
 <br>
 
@@ -173,7 +170,7 @@ Foremost, check the python version
   python --version
 ```
 
-#### get
+#### Get
 
 Subsequently, `get` the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers) relative to the system's python version, e.g.,
 
@@ -223,9 +220,6 @@ Next, within a new terminal
   conda config --set auto_activate_base false
   sudo chown -R $USER:$USER /opt/miniconda3
 ```
-
-<br>
-<br>
 
 <br>
 <br>
@@ -290,7 +284,6 @@ mklink libcuda.so libcuda.so.1.1
 mklink libcuda.so.1 libcuda.so.1.1
 ```
 
-<br>
 <br>
 
 Now, **install `tensorflow`**
