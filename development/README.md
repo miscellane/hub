@@ -5,8 +5,8 @@
 Especially [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/).  Apriori
 
 ```shell
-    sudo apt update
-    sudo apt upgrade
+sudo apt update
+sudo apt upgrade
 ```
 
 Inspecting the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys
