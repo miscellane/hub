@@ -220,11 +220,11 @@ sudo chmod +x Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
 Install in the specified directory
 
 ```shell
-  # Include <-b> for automatic acceptance of the terms & conditions
-  sudo bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh -p /opt/miniconda3
+# Include <-b> for automatic acceptance of the terms & conditions
+sudo bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh -p /opt/miniconda3
 
-  $ Do you wish the installer to initialize Miniconda3 by running conda init?
-  >>> no
+$ Do you wish the installer to initialize Miniconda3 by running conda init?
+>>> no
 ```
 
 #### Path Variable
