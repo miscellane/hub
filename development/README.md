@@ -89,6 +89,13 @@ Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operati
 Addressing conflicts: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html
 
 ```shell
+sudo rm /etc/apt/sources.list.d/nvidia-docker.list && rm /etc/apt/sources.list.d/nvidia-container-toolkit.list && \
+	rm /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg && rm /usr/share/keyrings/nvidia-docker-keyring.gpg
+```
+
+Then
+
+```shell
     distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
     echo $distribution
     curl -fsSL https://nvidia.github.io/nvidia-docker/gpgkey | \
