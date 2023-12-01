@@ -9,6 +9,13 @@ Especially [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us
     sudo apt upgrade
 ```
 
+Inspecting the <abbr title="GNU Privacy Guard">GPG</abbr> keys
+
+```shell
+gpg --list-keys
+gpg --list-secret-keys
+```
+
 <br>
 
 ## IntelliJ IDEA
