@@ -201,7 +201,7 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 Foremost, check the python version
 
 ```shell
-  python --version
+python --version
 ```
 
 #### Get
