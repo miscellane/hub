@@ -2,6 +2,13 @@
 
 **LINUX Environment Notes**
 
+Apriori
+
+```shell
+    sudo apt update
+    sudo apt upgrade
+```
+
 <br>
 
 ## IntelliJ IDEA
@@ -15,6 +22,20 @@
   cd .../bin
   ./idea.sh
 ```
+
+<br>
+<br>
+<br>
+
+## GNU `wget`
+
+The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
+
+```shell
+sudo apt install wget ca-certificates
+```
+
+`ca-certificates` allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.
 
 <br>
 <br>
