@@ -143,7 +143,7 @@ sudo mkdir -p /etc/docker
 sudo nvidia-ctk runtime configure --runtime=docker
 ```
 
-Restart Docker Desktop, then run
+Restart Docker Desktop; perhaps run `sudo nvidia-ctk runtime configure --runtime=containerd` also, and restart Desktop Docker.  Subsequently, run
 
 ```shell
 docker run --rm --gpus all nvidia/cuda:{cuda_version}-base-ubuntu{ubuntu_version} nvidia-smi
