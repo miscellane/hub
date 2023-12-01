@@ -60,14 +60,14 @@ sudo apt install git-all
 Subsequently, [set up & configure](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config) `git` ...
 
 ```shell
-  git config --global user.name ""
-  git config --global user.email "...@users.noreply.github.com"
-  git config --global core.editor "vim --nofork"
-  git config --global init.defaultBranch master
+git config --global user.name ""
+git config --global user.email "...@users.noreply.github.com"
+git config --global core.editor "vim --nofork"
+git config --global init.defaultBranch master
 
-  ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
+ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
 
-  cat ~/.ssh/id_ed25519.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 <br>
