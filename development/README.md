@@ -2,7 +2,7 @@
 
 **LINUX Environment Notes**
 
-Apriori
+Especially [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/).  Apriori
 
 ```shell
     sudo apt update
@@ -144,13 +144,13 @@ docker run --rm --gpus all nvidia/cuda:{cuda_version}-base-ubuntu{ubuntu_version
 
 wherein
 
-* `cuda_version`: {major}.{minor}.{build}, e.g., 12.2.0
-* `ubuntu_version`: {major}.{minor}, e.g., 20.04
+* `cuda_version`: {major}.{minor}.{build}, e.g., 12.2.2
+* `ubuntu_version`: {major}.{minor}, e.g., 22.04
 
 e.g.,
 
 ```shell
-docker run --rm --gpus all nvidia/cuda:12.2.0-base-ubuntu20.04 nvidia-smi
+docker run --rm --gpus all nvidia/cuda:12.2.2-base-ubuntu22.04 nvidia-smi
 ```
 
 Important, ensure that a [`nvidia/cuda` tag](https://hub.docker.com/r/nvidia/cuda/tags) that is inline with the machine's CUDA & Ubuntu versions exists.  The machine's cuda version is retrievable via
