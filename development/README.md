@@ -125,10 +125,11 @@ Next install `nvidia-container-toolkit`
 
 ```shell
 sudo apt update
+sudo rm -r /etc/nvidia-container-runtime
 sudo apt install -y nvidia-container-toolkit
 ```
 
-Subsequently, ensure the Docker daemon recognises NVIDIA Container Runtime by running a configuration script
+The second command ensures that the final command can create/recreate the directory `/etc/nvidia-container-runtime`. Subsequently, ensure the Docker daemon recognises NVIDIA Container Runtime by running a configuration script
 
 ```shell
 # Initially, ensure /etc/docker exists; option -p ensures all the directories of a path hierarchy exist
