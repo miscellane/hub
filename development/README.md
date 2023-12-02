@@ -70,6 +70,8 @@ ssh-keygen -t ed25519 -C "...@users.noreply.github.com"
 cat ~/.ssh/id_ed25519.pub
 ```
 
+There are instances whereby multiple accounts have to be managed per git client, e.g., study [GitHub Multiple Accounts](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts).
+
 <br>
 <br>
 
