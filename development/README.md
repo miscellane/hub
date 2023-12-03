@@ -75,6 +75,37 @@ There are instances whereby multiple accounts have to be managed per git client,
 <br>
 <br>
 
+## NVIDIA
+
+In progress ... https://developer.nvidia.com/
+
+Steps:
+
+Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version
+https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5
+
+Drivers
+https://www.nvidia.co.uk/Download/index.aspx?lang=en-uk
+
+
+NVIDIA CUDA Toolkit
+https://developer.nvidia.com/cuda-downloads
+https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+
+cuDNN
+https://developer.nvidia.com/cudnn
+
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows
+
+JAX
+https://developer.nvidia.com/jax-container-early-access
+https://catalog.ngc.nvidia.com/orgs/nvidia/containers/jax
+
+
+<br>
+<br>
+
 
 ## Docker
 
