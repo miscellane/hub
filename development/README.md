@@ -88,7 +88,7 @@ Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version: [Matr
   * [Release Notes](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
 * Install [cuDNN](https://developer.nvidia.com/cudnn)
   * [Linux](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux)
-  * [Windows]https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows
+  * [Windows](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows)
 
 <br>
 
