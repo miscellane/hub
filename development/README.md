@@ -93,6 +93,8 @@ https://developer.nvidia.com/cuda-downloads
 https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 
 cuDNN
+https://developer.nvidia.com/cudnn
+
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows
 
