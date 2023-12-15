@@ -39,6 +39,12 @@ i.e., the `/bin/java` suffix of the penultimate command's output is excluded/rem
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 ```
 
+Or rather, edit /etc/environment by appending the definition
+
+```shell
+JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+```
+
 <br>
 <br>
 
