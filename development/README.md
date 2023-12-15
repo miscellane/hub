@@ -169,7 +169,7 @@ References for running JAX dependent programs via docker containers.
 <br>
 
 
-## Docker & NVIDIA
+## Docker, NVIDIA, Windows 11, & Windows Subsystem for Linux Kernels
 
 This set-up ensures that docker containers can run CUDA GPU (Graphics Processing Unit) enabled programs.
 
