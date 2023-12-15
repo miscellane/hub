@@ -173,6 +173,7 @@ References for running JAX dependent programs via docker containers.
 
 This set-up ensures that docker containers can run CUDA GPU (Graphics Processing Unit) enabled programs.
 
+
 ### Docker Desktop
 
 Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operating system that will be associated with Docker Desktop
@@ -183,7 +184,6 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 
 [This avoids conflicts](https://docs.docker.com/desktop/wsl/#:~:text=To%20avoid%20any%20potential%20conflicts).  Subsequently, [install Docker Desktop](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop).  Read [...](https://www.docker.com/products/docker-desktop/alternatives/) for an outline of the advantages of Docker Desktop vis-à-vis Docker Engine.
 
-<br>
 
 ### NVIDIA Docker
 
@@ -215,7 +215,6 @@ sudo apt update
 sudo apt install -y nvidia-docker2
 ```
 
-<br>
 
 ### NVIDIA [Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html)
 
