@@ -80,6 +80,15 @@ Perhaps [TensorRT](https://www.tensorflow.org/install/pip#windows-wsl2:~:text=im
 pip install --upgrade tensorrt
 ```
 
+and [DASK](https://www.dask.org), [scikit-learn](https://scikit-learn.org/stable/), and code analysis packages; [pytest](https://docs.pytest.org/en/latest/), [coverage](https://coverage.readthedocs.io/en/7.3.3/), [pylint](https://pylint.readthedocs.io/en/latest/), [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/), [flake8](https://flake8.pycqa.org/en/latest/).
+
+```shell
+pip install "dask[complete]"
+pip install scikit-learn
+pip install pytest coverage pylint pytest-cov flake8
+```
+
+
 <br>
 <br>
 
