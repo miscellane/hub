@@ -33,7 +33,20 @@ The `JAVA_HOME` environment variable is defined as
 readlink -f `which java` | sed "s:/bin/java::"
 ```
 
-i.e., the `/bin/java` suffix of the penultimate command's output is excluded/removed. 
+i.e., the `/bin/java` suffix of the penultimate command's output is excluded/removed. If the resulting string is `/usr/lib/jvm/java-19-openjdk-amd64`, then
 
-
+```shell
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+```
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
