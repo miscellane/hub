@@ -1,6 +1,12 @@
+<br>
 
+**Python Environments**
 
-### A sample *Tensorflow GPU (Graphics Processing Unit)* virtual environment
+<br>
+
+## Tensorflow
+
+### GPU (Graphics Processing Unit) Computing Environment
 
 Foremost, a virtual conda environment for tensorflow - within a WSL (Windows Subsystem for Linux) operating system ...
 
@@ -73,3 +79,15 @@ Perhaps [TensorRT](https://www.tensorflow.org/install/pip#windows-wsl2:~:text=im
 ```shell
 pip install --upgrade tensorrt
 ```
+
+<br>
+<br>
+
+<br> 
+<br>
+
+<br> 
+<br>
+
+<br> 
+<br>
