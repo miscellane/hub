@@ -173,6 +173,9 @@ References for running JAX dependent programs via docker containers.
 
 This set-up ensures that docker containers can run CUDA GPU (Graphics Processing Unit) enabled programs.
 
+<br>
+<br>
+
 ### Docker Desktop
 
 Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operating system that will be associated with Docker Desktop
