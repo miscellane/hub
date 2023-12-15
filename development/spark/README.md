@@ -57,6 +57,11 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 
 ## maven
 
+```shell
+wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+tar xzvf apache-maven-3.9.6-bin.tar.gz
+```
+
 
 <br>
 <br>
