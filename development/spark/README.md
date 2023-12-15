@@ -53,6 +53,10 @@ JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).
 
+<br>
+
+## maven
+
 
 <br>
 <br>
