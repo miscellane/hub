@@ -18,20 +18,7 @@ gpg --list-secret-keys
 
 <br>
 
-## IntelliJ IDEA
 
-```shell
-# get
-sudo wget -P Downloads https://download.jetbrains.com/idea/ideaIC-2022.3.3.tar.gz
-sudo tar -xzf ideaIC-2022.3.3.tar.gz -C /opt 
-
-# starting within idea bin
-cd .../bin
-./idea.sh
-```
-
-<br>
-<br>
 
 ## GNU `wget`
 
@@ -79,33 +66,30 @@ There are instances whereby multiple accounts have to be managed per git client,
 
 In progress ... https://developer.nvidia.com/
 
-### Steps
-
-Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version: [Matrix](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5)
+The references herein outline the fundamental NVIDIA installations required within Windows 11 that ensure the ability to run CUDA dependent programs within Windows 11 or a WSL (Windows Subsystem for Linux) kernel.  Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version: [Matrix](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5)
 
 * Install [Drivers](https://www.nvidia.co.uk/Download/index.aspx?lang=en-uk)
 * Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
   * [Release Notes](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
 * Install [cuDNN](https://developer.nvidia.com/cudnn)
-  * [Linux](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux)
   * [Windows](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows)
 
 <br>
 
-### Complimentary Tools
+## Docker & JAX
 
-JAX
+References for running JAX dependent programs via docker containers.
+
 * [Early Access JAX Containers](https://developer.nvidia.com/jax-container-early-access)
 * [JAX Containers](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/jax)
 
 
 <br>
-<br>
 
 
-## Docker
+## Docker & NVIDIA
 
-<br>
+This set-up ensures that docker containers can run GPU (Graphics Processing Unit) enabled programs.
 
 ### Docker Desktop
 
@@ -218,22 +202,19 @@ cat /etc/os-release
 
 prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a` or `cat /etc/issue`.
 
-<br>
-<br>
-
-## Virtual Environments
 
 <br>
 
-### Software: `miniconda`
 
-Foremost, check the python version
+## CONDA
+
+Via `miniconda`.  Foremost, check the python version
 
 ```shell
 python --version
 ```
 
-#### Get
+### The Installer
 
 Subsequently, `get` the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers) relative to the system's python version, e.g.,
 
@@ -244,7 +225,7 @@ cd Downloads
 sudo chmod +x Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
 ```
 
-#### Install
+### Install
 
 Install in the specified directory
 
@@ -256,7 +237,7 @@ $ Do you wish the installer to initialize Miniconda3 by running conda init?
 >>> no
 ```
 
-#### Path Variable
+### Set the Path Variable
 
 Open `/etc/profile`, i.e.,
 
@@ -274,7 +255,7 @@ fi
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).  **Exit** the terminal.
 
-#### Set-up
+### Set-up
 
 Next, within a new terminal
 
@@ -283,6 +264,23 @@ conda init bash
 conda config --set auto_activate_base false
 sudo chown -R $USER:$USER /opt/miniconda3
 ```
+
+<br>
+
+## IntelliJ IDEA
+
+```shell
+# get
+sudo wget -P Downloads https://download.jetbrains.com/idea/ideaIC-2022.3.3.tar.gz
+sudo tar -xzf ideaIC-2022.3.3.tar.gz -C /opt 
+
+# starting within idea bin
+cd .../bin
+./idea.sh
+```
+
+<br>
+<br>
 
 
 <br>
