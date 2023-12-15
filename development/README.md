@@ -284,18 +284,6 @@ conda config --set auto_activate_base false
 sudo chown -R $USER:$USER /opt/miniconda3
 ```
 
-<br>
-<br>
-
-
-
-The upcoming sample project depends on ...
-
-```shell
-pip install "dask[complete]"
-pip install scikit-learn
-pip install pytest coverage pylint pytest-cov flake8
-```
 
 <br>
 <br>
