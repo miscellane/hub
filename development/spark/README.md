@@ -12,4 +12,10 @@ sudo apt install openjdk-19-jdk-headless
 
 ```
 
+For the installation location
+
+```shell
+sudo update-alternatives --config java
+```
+
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
