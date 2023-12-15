@@ -2,14 +2,16 @@
 
 **LINUX Environment Notes**
 
-Especially [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/).  Apriori
+<br>
+
+Including [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/).  Apriori
 
 ```shell
 sudo apt update
 sudo apt upgrade
 ```
 
-Inspecting the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys
+Additionally, often inspect the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys via
 
 ```shell
 gpg --list-keys
@@ -17,8 +19,6 @@ gpg --list-secret-keys
 ```
 
 <br>
-
-
 
 ## GNU `wget`
 
@@ -30,7 +30,6 @@ sudo apt install wget ca-certificates
 
 `ca-certificates` allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.
 
-<br>
 <br>
 
 ## GIT
@@ -59,7 +58,6 @@ cat ~/.ssh/id_ed25519.pub
 
 There are instances whereby multiple accounts have to be managed per git client, e.g., study [GitHub Multiple Accounts](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts).
 
-<br>
 <br>
 
 ## NVIDIA
