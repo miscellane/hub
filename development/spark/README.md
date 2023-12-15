@@ -39,11 +39,20 @@ i.e., the `/bin/java` suffix of the penultimate command's output is excluded/rem
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 ```
 
-Or rather, edit /etc/environment by appending the definition
+Or rather, edit `/etc/environment` by appending the definition of `JAVA_HOME` at the end of the file.  An edit mode option is
+
+```shell
+sudo vi /etc/environment
+```
+
+Subsequently, append
 
 ```shell
 JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 ```
+
+The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).
+
 
 <br>
 <br>
