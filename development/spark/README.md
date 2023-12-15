@@ -1,6 +1,8 @@
 
 
-### java
+## java
+
+### Installing
 
 ```shell
 # jdk & jre
@@ -12,7 +14,9 @@ sudo apt install openjdk-19-jdk-headless
 
 ```
 
-For the installation location
+### Setting Environment Variables
+
+The variable of interest is the `JAVA_HOME` variable, which depends on the installation directory string, i.e.,
 
 ```shell
 sudo update-alternatives --config java
@@ -29,7 +33,7 @@ The `JAVA_HOME` environment variable is defined as
 readlink -f `which java` | sed "s:/bin/java::"
 ```
 
-i.e., the `/bin/java` suffix of the penultimate command's output is excluded/removed.
+i.e., the `/bin/java` suffix of the penultimate command's output is excluded/removed. 
 
 
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
