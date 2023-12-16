@@ -64,10 +64,13 @@ References
 ### Installing
 
 ```shell
-# https://www.man7.org/linux/man-pages/man1/tar.1.html
-# https://linux.die.net/man/1/mv
+# get
 sudo wget -P Downloads https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+
+# https://www.man7.org/linux/man-pages/man1/tar.1.html
 sudo tar -xzvf apache-maven-3.9.6-bin.tar.gz -C /opt
+
+# https://linux.die.net/man/1/mv
 sudo mv /opt/apache-maven-3.9.6/ /opt/maven/
 ```
 
