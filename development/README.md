@@ -27,7 +27,7 @@ printenv
 
 <br>
 
-* [GNU](#gnu-wget)
+* [wget](#wget)
 * [GIT](#git)
 * [CONDA](#conda)
 * [IntelliJ IDEA](#intellij-idea)
@@ -36,7 +36,7 @@ printenv
 
 <br>
 
-## GNU `wget`
+## wget
 
 The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
 
