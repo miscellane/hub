@@ -35,21 +35,18 @@ Model Cards for Model Reporting
 
 * [Datasheets for Datasets](https://cacm.acm.org/magazines/2021/12/256932-datasheets-for-datasets/abstract)
 
-
-
 **Deploy**
 
 [Continuous integration vs. delivery vs. deployment ](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 [Continuous Integration/Continuous Delivery](https://www.cisco.com/c/en/us/solutions/data-center/data-center-networking/what-is-ci-cd.html)
 
-
-
 **Opt**
 
-https://www.ookla.com/ookla-for-good/open-data
-https://registry.opendata.aws/speedtest-global-performance/
-https://aws.amazon.com/marketplace/pp/prodview-zkfasxv7lkvl4?sr=0-6&ref_=beagle&applicationId=AWSMPContessa#overview
-https://www.nature.com/articles/s41597-022-01411-5
+* [Ookla’s Open Data Initiative](https://www.ookla.com/ookla-for-good/open-data)
+  * [Data](https://registry.opendata.aws/speedtest-global-performance/)
+* VitalLab
+  * [VitalDB](https://aws.amazon.com/marketplace/pp/prodview-zkfasxv7lkvl4?sr=0-6&ref_=beagle&applicationId=AWSMPContessa#overview)
+  * [VitalDB, a high-fidelity multi-parameter vital signs database in surgical patients](https://www.nature.com/articles/s41597-022-01411-5)
 
 
 
