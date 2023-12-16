@@ -57,10 +57,13 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 
 ## maven
 
+References
+* [Apache Maven](https://maven.apache.org/index.html)
+* [Maven Installation Guide](https://www.baeldung.com/install-maven-on-windows-linux-mac) by Baeldung
+
 ### Installing
 
 ```shell
-# https://maven.apache.org/index.html
 # https://www.man7.org/linux/man-pages/man1/tar.1.html
 # https://linux.die.net/man/1/mv
 sudo wget -P Downloads https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
