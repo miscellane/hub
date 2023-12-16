@@ -4,6 +4,19 @@
 
 <br>
 
+
+* [Linux Environment](#linux-environment)
+  * [wget](#wget)
+  * [GIT](#git)
+  * [CONDA](#conda)
+  * [IntelliJ IDEA](#intellij-idea)
+  * [NVIDIA](#nvidia)
+
+  <br>
+
+# Linux Environment
+
+
 Including [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) kernels.  Apriori
 
 ```shell
@@ -24,14 +37,6 @@ Print environment variables via
 # https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
 printenv
 ```
-
-<br>
-
-* [wget](#wget)
-* [GIT](#git)
-* [CONDA](#conda)
-* [IntelliJ IDEA](#intellij-idea)
-* [NVIDIA](#nvidia)
 
 
 <br>
