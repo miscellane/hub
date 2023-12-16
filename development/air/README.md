@@ -40,8 +40,9 @@ Focus on sulphur dioxide
 
 
 References:
-* https://www.scotpho.org.uk/health-conditions/asthma/data/primary-care/
-* https://www.theguardian.com/uk-news/series/living-hell-britains-rent-crisis
+* [Air Quality Pollutants](https://dd.eionet.europa.eu/vocabulary/aq/pollutant/view)
+* [Asthma Primary Care Data](https://www.scotpho.org.uk/health-conditions/asthma/data/primary-care/)
+* [Living Hell: Britain's Rent Crisis](https://www.theguardian.com/uk-news/series/living-hell-britains-rent-crisis)
 
 <br>
 <br>
