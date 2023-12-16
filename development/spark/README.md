@@ -122,6 +122,17 @@ Hence
 mvn -version
 ```
 
+<br>
+
+## HADOOP
+
+References
+* [Installing](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Installing_Software)
+
+```shell
+sudo wget -P Downloads https://dlcdn.apache.org/hadoop/common/stable/hadoop-3.3.6.tar.gz
+```
+
 
 <br>
 <br>
