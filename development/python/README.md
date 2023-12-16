@@ -13,8 +13,12 @@ Notes:
 
 ## Tensorflow
 
-* https://hub.docker.com/r/tensorflow/tensorflow/tags
-* https://www.tensorflow.org/install/pip#hardware_requirements
+* [Images](https://hub.docker.com/r/tensorflow/tensorflow/tags)
+  * https://www.tensorflow.org/install/docker
+* [Tensorflow & Windows Subsystem for Linux (WSL)](https://www.tensorflow.org/install/pip#windows-wsl2)
+* [Hardware Requirements](https://www.tensorflow.org/install/pip#hardware_requirements)
+* [Theoretical and advanced machine learning with TensorFlow](https://www.tensorflow.org/resources/learn-ml/theoretical-and-advanced-machine-learning)
+* [Images](https://www.tensorflow.org/tutorials/load_data/images)
 
 
 ### GPU (Graphics Processing Unit) Computing Environment
@@ -85,11 +89,12 @@ Now, **install `tensorflow`**
 pip install tensorflow==2.12.*
 ```
 
-Perhaps [TensorRT](https://www.tensorflow.org/install/pip#windows-wsl2:~:text=improve%20latency%20and%20throughput%20for%20inference)
+Perhaps [TensorRT](https://www.tensorflow.org/install/pip#windows-wsl2:~:text=improve%20latency%20and%20throughput%20for%20inference); [more](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-861/index.html).
 
 ```shell
 pip install --upgrade tensorrt
 ```
+
 
 and [DASK](https://www.dask.org), [scikit-learn](https://scikit-learn.org/stable/), and code analysis packages; [pytest](https://docs.pytest.org/en/latest/), [coverage](https://coverage.readthedocs.io/en/7.3.3/), [pylint](https://pylint.readthedocs.io/en/latest/), [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/), [flake8](https://flake8.pycqa.org/en/latest/).
 
@@ -104,6 +109,8 @@ pip install pytest coverage pylint pytest-cov flake8
 ## References
 
 * [pip](https://pip.pypa.io/en/stable/)
+* [Python Package Index](https://pypi.org)
+* [Python & Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial)
 
 
 <br>
