@@ -243,7 +243,11 @@ Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operati
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 
-[This avoids conflicts](https://docs.docker.com/desktop/wsl/#:~:text=To%20avoid%20any%20potential%20conflicts).  Subsequently, [install Docker Desktop](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop).  Read [...](https://www.docker.com/products/docker-desktop/alternatives/) for an outline of the advantages of Docker Desktop vis-à-vis Docker Engine.
+[This avoids conflicts](https://docs.docker.com/desktop/wsl/#:~:text=To%20avoid%20any%20potential%20conflicts).  Subsequently, [install Docker Desktop](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop).  Read [...](https://www.docker.com/products/docker-desktop/alternatives/) for an outline of the advantages of Docker Desktop vis-à-vis Docker Engine.  References
+
+* [Docker running?](https://docs.docker.com/config/daemon/troubleshoot/#check-whether-docker-is-running)
+* [Containerize an application](https://docs.docker.com/get-started/02_our_app/)
+* [Introducing the Docker Desktop WSL (Windows Subsystem for Linux) 2 Backend](https://www.docker.com/blog/new-docker-desktop-wsl2-backend/)
 
 
 ### NVIDIA Docker
@@ -350,6 +354,9 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 * [Containers & Security](https://www.baeldung.com/ops/root-user-password-docker-container)
 * [Docker Reference](https://docs.docker.com/engine/reference/run/)
 * [Images, Dockerfiles, & Docker Compose](https://containers.dev/guide/dockerfile)
+* [WSL (Windows Subsystem for Linux): Develop in Remote Containers](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#develop-in-remote-containers-using-vs-code)
+* [Conda & Dockerfile](https://pythonspeed.com/articles/activate-conda-dockerfile/)
+
 
 <br>
 <br>
