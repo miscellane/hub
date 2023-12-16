@@ -5,6 +5,13 @@
 
 <br>
 
+For geographic computation purposes beware of
+
+> easting (x), northing (y) <br>
+> longitude (x), latitude (y)
+
+<br>
+
 Resources:
 * https://www.scottishairquality.scot/sos-scotland/static/doc/api-doc/
 * https://www.scottishairquality.scot/data/sos/pollutants
