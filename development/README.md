@@ -152,7 +152,9 @@ conda update -n base -c anaconda conda
 
 <br>
 
-## IntelliJ IDEA
+## Integrated Development Environment
+
+### IntelliJ IDEA
 
 ```shell
 # get
@@ -168,7 +170,35 @@ References:
 * [Connecting Docker](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
   * [Containers](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html#recent_projects)
   * [Demo](https://github.com/IdeaUJetBrains/idea-demo-devcontainers)
+  * [Remote Development](https://blog.jetbrains.com/blog/2022/11/09/remote-development-in-jetbrains-ides-now-available-to-github-codespaces-users/)
 * [Remote Python Entities](https://www.jetbrains.com/help/idea/configuring-remote-python-sdks.html)
+
+
+### Visual Studio Code
+
+Within a Windows Subsystem for Linux kernel
+
+```shell
+code .
+```
+
+https://code.visualstudio.com/docs/containers/quickstart-python
+https://code.visualstudio.com/docs/devcontainers/create-dev-container
+https://code.visualstudio.com/docs/python/environments
+
+### Cloud Environments
+
+**Google Colab**
+
+* https://colab.research.google.com/notebooks/gpu.ipynb
+
+
+**GitHub/Microsoft Code Spaces**
+
+https://docs.github.com/en/codespaces/troubleshooting
+https://docs.github.com/en/codespaces#all-docs
+https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
+https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces
 
 
 <br>
@@ -193,6 +223,8 @@ References for running JAX dependent programs via docker containers.
 
 * [Early Access JAX Containers](https://developer.nvidia.com/jax-container-early-access)
 * [JAX Containers](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/jax)
+* [Documentation](https://jax.readthedocs.io/en/latest/installation.html#docker-containers-nvidia-gpu)
+* [JAX Toolbox](https://github.com/NVIDIA/JAX-Toolbox)
 
 
 <br>
@@ -317,6 +349,7 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 * https://code.visualstudio.com/docs/devcontainers/tutorial
 * [Containers & Security](https://www.baeldung.com/ops/root-user-password-docker-container)
 * [Docker Reference](https://docs.docker.com/engine/reference/run/)
+* [Images, Dockerfiles, & Docker Compose](https://containers.dev/guide/dockerfile)
 
 <br>
 <br>
