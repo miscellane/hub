@@ -1,17 +1,21 @@
+<br>
 
+**Notes**
+
+<br>
 
 ## java
+
+References
+* [Installing JAVA](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04)
 
 ### Installing
 
 ```shell
 # jdk & jre
-# https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04
-
+sudo apt install openjdk-19-jdk-headless
 java --version
 javac --version
-sudo apt install openjdk-19-jdk-headless
-
 ```
 
 ### Setting Environment Variables
@@ -55,7 +59,7 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 
 <br>
 
-## maven
+## MAVEN
 
 References
 * [Apache Maven](https://maven.apache.org/index.html)
@@ -105,6 +109,12 @@ Subsequently, reload the environment variable via command
 
 ```shell
 source ~/.bashrc
+```
+
+Hence
+
+```shell
+mvn -version
 ```
 
 
