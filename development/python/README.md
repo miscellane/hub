@@ -4,6 +4,13 @@
 
 <br>
 
+## Python & Docker
+
+Notes:
+* [Base Images](https://pythonspeed.com/articles/base-image-python-docker-images/)
+
+<br>
+
 ## Tensorflow
 
 ### GPU (Graphics Processing Unit) Computing Environment
