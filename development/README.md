@@ -18,6 +18,13 @@ gpg --list-keys
 gpg --list-secret-keys
 ```
 
+Print environment variables via
+
+```shell
+# https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+printenv
+```
+
 <br>
 
 * [GNU](#gnu-wget)
