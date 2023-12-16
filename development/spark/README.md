@@ -60,8 +60,10 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 ```shell
 # https://maven.apache.org/index.html
 # https://www.man7.org/linux/man-pages/man1/tar.1.html
-wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
-tar -xzvf apache-maven-3.9.6-bin.tar.gz
+# https://linux.die.net/man/1/mv
+sudo wget -P Downloads https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+sudo tar -xzvf apache-maven-3.9.6-bin.tar.gz -C /opt
+sudo mv /opt/apache-maven-3.9.6/ /opt/maven/
 ```
 
 Operations
@@ -70,10 +72,10 @@ Operations
 
 Options
 > -z, --gzip, --gunzip, --ungzip <br>
-> Filter the archive through gzip
+> Filter the archive through gzip.
 >
 > -v, --verbose <br>
-> Verbosely list files processed
+> Verbosely list files processed.
 
 Selections
 > -f, --file=ARCHIVE <br>
