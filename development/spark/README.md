@@ -131,6 +131,12 @@ References
 
 ```shell
 sudo wget -P Downloads https://dlcdn.apache.org/hadoop/common/stable/hadoop-3.3.6.tar.gz
+
+# https://www.man7.org/linux/man-pages/man1/tar.1.html
+sudo tar -xzvf hadoop-3.3.6.tar.gz -C /opt
+
+# https://linux.die.net/man/1/mv
+sudo mv /opt/hadoop-3.3.6/ /opt/hadoop/
 ```
 
 
