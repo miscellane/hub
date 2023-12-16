@@ -152,6 +152,13 @@ cd .../bin
 ./idea.sh
 ```
 
+References:
+* [Connecting Docker](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
+  * [Containers](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html#recent_projects)
+  * [Demo](https://github.com/IdeaUJetBrains/idea-demo-devcontainers)
+* [Remote Python Entities](https://www.jetbrains.com/help/idea/configuring-remote-python-sdks.html)
+
+
 <br>
 
 ## NVIDIA
