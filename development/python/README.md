@@ -13,6 +13,10 @@ Notes:
 
 ## Tensorflow
 
+* https://hub.docker.com/r/tensorflow/tensorflow/tags
+* https://www.tensorflow.org/install/pip#hardware_requirements
+
+
 ### GPU (Graphics Processing Unit) Computing Environment
 
 Foremost, a virtual conda environment for tensorflow - within a WSL (Windows Subsystem for Linux) operating system ...
@@ -94,6 +98,12 @@ pip install "dask[complete]"
 pip install scikit-learn
 pip install pytest coverage pylint pytest-cov flake8
 ```
+
+<br>
+
+## References
+
+* [pip](https://pip.pypa.io/en/stable/)
 
 
 <br>
