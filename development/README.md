@@ -38,6 +38,7 @@ printenv
   * [Docker Desktop](#docker-desktop)
   * [NVIDIA Docker](#nvidia-docker)
   * [NVIDIA Container Toolkit](#nvidia-container-toolkit)
+  * [Development Containers](#development-containers)
 
 <br>
 
@@ -299,6 +300,12 @@ cat /etc/os-release
 ```
 
 prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a` or `cat /etc/issue`.
+
+### Development Containers
+
+* https://containers.dev/implementors/json_reference/
+* https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
+* https://code.visualstudio.com/docs/devcontainers/tutorial
 
 
 <br>
