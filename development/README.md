@@ -1,20 +1,5 @@
 <br>
 
-* [Linux Environment](#linux-environment)
-  * [wget](#wget)
-  * [GIT](#git)
-  * [CONDA](#conda)
-  * [IntelliJ IDEA](#intellij-idea)
-  * [NVIDIA](#nvidia)
-  * [Docker & JAX](#docker--jax)
-  * [Docker, NVIDIA, Windows 11, & Windows Subsystem for Linux Kernels](#docker-nvidia-windows-11--windows-subsystem-for-linux-kernels)
-    * [Docker Desktop](#docker-desktop)
-    * [NVIDIA Docker](#nvidia-docker)
-    * [NVIDIA Container Toolkit](#nvidia-container-toolkit)
-
-<br>
-<br>
-
 # Linux Environment
 
 
@@ -39,6 +24,20 @@ Print environment variables via
 printenv
 ```
 
+<br>
+
+**CONTENT**
+
+* [wget](#wget)
+* [GIT](#git)
+* [CONDA](#conda)
+* [IntelliJ IDEA](#intellij-idea)
+* [NVIDIA](#nvidia)
+* [Docker & JAX](#docker--jax)
+* [Docker, NVIDIA, Windows 11, & Windows Subsystem for Linux Kernels](#docker-nvidia-windows-11--windows-subsystem-for-linux-kernels)
+  * [Docker Desktop](#docker-desktop)
+  * [NVIDIA Docker](#nvidia-docker)
+  * [NVIDIA Container Toolkit](#nvidia-container-toolkit)
 
 <br>
 
