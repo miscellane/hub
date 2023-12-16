@@ -141,6 +141,15 @@ conda config --set auto_activate_base false
 sudo chown -R $USER:$USER /opt/miniconda3
 ```
 
+### Upkeep
+ 
+Update [conda](https://docs.conda.io/projects/conda/en/4.14.x/index.html) via
+
+```shell
+conda update -n base -c anaconda conda
+```
+
+
 <br>
 
 ## IntelliJ IDEA
@@ -306,7 +315,8 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 * https://containers.dev/implementors/json_reference/
 * https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
 * https://code.visualstudio.com/docs/devcontainers/tutorial
-
+* [Containers & Security](https://www.baeldung.com/ops/root-user-password-docker-container)
+* [Docker Reference](https://docs.docker.com/engine/reference/run/)
 
 <br>
 <br>
