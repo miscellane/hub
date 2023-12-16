@@ -57,6 +57,8 @@ The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`v
 
 ## maven
 
+### Installing
+
 ```shell
 # https://maven.apache.org/index.html
 # https://www.man7.org/linux/man-pages/man1/tar.1.html
@@ -80,6 +82,24 @@ Options
 Selections
 > -f, --file=ARCHIVE <br>
 > Use archive file or device ARCHIVE.
+
+
+### Setting Environment Variables
+
+Edit `~/.bashrc` by appending
+
+```shell
+export M2_HOME=/opt/maven 
+export M2=$M2_HOME/bin 
+export MAVEN_OPTS=-Xmx512m 
+export PATH="$M2:$PATH"
+```
+
+Subsequently, reload the environment variable via command
+
+```shell
+source ~/.bashrc
+```
 
 
 <br>
