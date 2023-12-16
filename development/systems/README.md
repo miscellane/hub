@@ -17,7 +17,7 @@ Building Data Science / Machine Learning Products
   * [GitHub](https://github.com/ttzt/catalog_of_requirements_for_ai_products)
   * [Volere Specification Template](https://homepages.laas.fr/kader/Robertson.pdf)
 
-
+<br>
 
 **Principles**
 
@@ -30,15 +30,20 @@ Model Cards for Model Reporting
   * [Model Cards](https://oecd.ai/en/catalogue/tools/model-cards)
   * [Partnership on Artificial Intelligence](https://partnershiponai.org)
 
+<br>
 
 **Data Sheets**
 
 * [Datasheets for Datasets](https://cacm.acm.org/magazines/2021/12/256932-datasheets-for-datasets/abstract)
 
+<br>
+
 **Deploy**
 
 [Continuous integration vs. delivery vs. deployment ](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 [Continuous Integration/Continuous Delivery](https://www.cisco.com/c/en/us/solutions/data-center/data-center-networking/what-is-ci-cd.html)
+
+<br>
 
 **Opt**
 
