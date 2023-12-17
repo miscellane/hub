@@ -23,7 +23,7 @@
 
 <br>
 
-Note, this page uses the linux commands `tar` & `mv`, alongside command parameters.  **In the case of** [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html) the page uses **operations parameters**
+Note, this page uses the linux commands `tar` & `mv`, alongside command parameters.  **In the case of** [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html) the page uses **operations parameter**
 
 > -x, --extract, --get [Extract files from an archive.]
 
@@ -31,7 +31,7 @@ Note, this page uses the linux commands `tar` & `mv`, alongside command paramete
 > -z, --gzip, --gunzip, --ungzip [Filter the archive through gzip.] <br>
 > -v, --verbose [Verbosely list files processed.]
 
-and **selections parameters**
+and **selections parameter**
 > -f, --file=ARCHIVE [Use archive file or device ARCHIVE.]
 
 <br>
