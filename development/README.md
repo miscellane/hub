@@ -1,39 +1,52 @@
 <br>
 
-**LINUX Environment Notes**
+# Linux Environment
 
-Especially [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/).  Apriori
+
+Including [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) kernels.  Apriori
 
 ```shell
 sudo apt update
 sudo apt upgrade
 ```
 
-Inspecting the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys
+Additionally, often inspect the GNU Privacy Guard (<abbr title="GNU Privacy Guard">GPG</abbr>) keys via
 
 ```shell
 gpg --list-keys
 gpg --list-secret-keys
 ```
 
-<br>
-
-## IntelliJ IDEA
+Print environment variables via
 
 ```shell
-# get
-sudo wget -P Downloads https://download.jetbrains.com/idea/ideaIC-2022.3.3.tar.gz
-sudo tar -xzf ideaIC-2022.3.3.tar.gz -C /opt 
-
-# starting within idea bin
-cd .../bin
-./idea.sh
+# https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+printenv
 ```
 
 <br>
+
+**CONTENT**
+
+* [wget](#wget)
+* [GIT](#git)
+* [CONDA](#conda)
+* [Integrated Development Environment](#integrated-development-environment)
+  * [IntelliJ IDEA](#intellij-idea)
+  * [Visual Studio Code](#visual-studio-code)
+  * [Jupyter Lab](#jupyter-lab)
+  * [Cloud Environments](#cloud-environments)
+* [NVIDIA](#nvidia)
+* [Docker & JAX](#docker--jax)
+* [Docker, NVIDIA, Windows 11, & Windows Subsystem for Linux Kernels](#docker-nvidia-windows-11--windows-subsystem-for-linux-kernels)
+  * [Docker Desktop](#docker-desktop)
+  * [NVIDIA Docker](#nvidia-docker)
+  * [NVIDIA Container Toolkit](#nvidia-container-toolkit)
+  * [Development Containers](#development-containers)
+
 <br>
 
-## GNU `wget`
+## wget
 
 The <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a> utility:
 
@@ -43,7 +56,6 @@ sudo apt install wget ca-certificates
 
 `ca-certificates` allows applications that are secure sockets layer (SSL) dependent to verify the authenticity of SSL connections; SSL is a deprecated tool.
 
-<br>
 <br>
 
 ## GIT
@@ -73,39 +85,167 @@ cat ~/.ssh/id_ed25519.pub
 There are instances whereby multiple accounts have to be managed per git client, e.g., study [GitHub Multiple Accounts](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/managing-multiple-accounts).
 
 <br>
+
+## CONDA
+
+Via `miniconda`.  Foremost, check the python version
+
+```shell
+python --version
+```
+
+### The Installer
+
+Subsequently, `get` the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers) relative to the system's python version, e.g.,
+
+```shell
+# if python 3.10.*
+sudo wget -P Downloads https://repo.anaconda.com/miniconda/Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
+cd Downloads
+sudo chmod +x Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
+```
+
+### Install
+
+Install in the specified directory
+
+```shell
+# Include <-b> for automatic acceptance of the terms & conditions
+sudo bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh -p /opt/miniconda3
+
+$ Do you wish the installer to initialize Miniconda3 by running conda init?
+>>> no
+```
+
+### Set the Path Variable
+
+Open `/etc/profile`, i.e.,
+
+```shell
+sudo vi profile
+```
+
+and append
+
+```bash
+if ! [[ $PATH =~ "/opt/miniconda3/bin" ]]; then
+	PATH="/opt/miniconda3/bin:$PATH"
+fi
+```
+
+The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).  **Exit** the terminal.
+
+### Set-up
+
+Next, within a new terminal
+
+```shell
+conda init bash
+conda config --set auto_activate_base false
+sudo chown -R $USER:$USER /opt/miniconda3
+```
+
+### Upkeep
+ 
+Update [conda](https://docs.conda.io/projects/conda/en/4.14.x/index.html) via
+
+```shell
+conda update -n base -c anaconda conda
+```
+
+
+<br>
+
+## Integrated Development Environment
+
+### IntelliJ IDEA
+
+```shell
+# get
+sudo wget -P Downloads https://download.jetbrains.com/idea/ideaIC-2022.3.3.tar.gz
+sudo tar -xzf ideaIC-2022.3.3.tar.gz -C /opt 
+
+# starting within idea bin
+cd .../bin
+./idea.sh
+```
+
+References:
+* [Connecting Docker](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
+  * [Containers](https://www.jetbrains.com/help/idea/connect-to-devcontainer.html#recent_projects)
+  * [Demo](https://github.com/IdeaUJetBrains/idea-demo-devcontainers)
+  * [Remote Development](https://blog.jetbrains.com/blog/2022/11/09/remote-development-in-jetbrains-ides-now-available-to-github-codespaces-users/)
+* [Remote Python Entities](https://www.jetbrains.com/help/idea/configuring-remote-python-sdks.html)
+
+
+### Visual Studio Code
+
+Within a Windows Subsystem for Linux kernel
+
+```shell
+code .
+```
+
+https://code.visualstudio.com/docs/containers/quickstart-python
+https://code.visualstudio.com/docs/devcontainers/create-dev-container
+https://code.visualstudio.com/docs/python/environments
+
+### Jupyter Lab
+
+* [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
+  * https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#image-relationships
+  * https://jupyter-docker-stacks.readthedocs.io/en/latest/using/running.html
+* [GPU Jupyter](https://github.com/iot-salzburg/gpu-jupyter)
+* [Docker for Data Science](https://github.com/docker-for-data-science)
+* [Supercharging AI/ML Development with JupyterLab and Docker](https://www.docker.com/blog/supercharging-ai-ml-development-with-jupyterlab-and-docker/)
+
+### Cloud Environments
+
+**Google Colab**
+
+* https://colab.research.google.com/notebooks/gpu.ipynb
+
+
+**GitHub/Microsoft Code Spaces**
+
+https://docs.github.com/en/codespaces/troubleshooting
+https://docs.github.com/en/codespaces#all-docs
+https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
+https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces
+
 <br>
 
 ## NVIDIA
 
 In progress ... https://developer.nvidia.com/
 
-### Steps
-
-Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version: [Matrix](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5)
+The references herein outline the fundamental NVIDIA installations required within Windows 11 that ensure the ability to run CUDA dependent programs within Windows 11 or a WSL (Windows Subsystem for Linux) kernel.  Beware of the mappings between CUDA Toolkit Version & CUDA Driver Version: [Matrix](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id5)
 
 * Install [Drivers](https://www.nvidia.co.uk/Download/index.aspx?lang=en-uk)
 * Install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
   * [Release Notes](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
 * Install [cuDNN](https://developer.nvidia.com/cudnn)
-  * [Linux](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-linux)
   * [Windows](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#install-windows)
 
 <br>
 
-### Complimentary Tools
+## Docker & JAX
 
-JAX
+References for running JAX dependent programs via docker containers.
+
 * [Early Access JAX Containers](https://developer.nvidia.com/jax-container-early-access)
 * [JAX Containers](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/jax)
+* [Documentation](https://jax.readthedocs.io/en/latest/installation.html#docker-containers-nvidia-gpu)
+* [JAX Toolbox](https://github.com/NVIDIA/JAX-Toolbox)
 
 
 <br>
-<br>
 
 
-## Docker
+## Docker, NVIDIA, Windows 11, & Windows Subsystem for Linux Kernels
 
-<br>
+This set-up ensures that docker containers can run CUDA GPU (Graphics Processing Unit) enabled programs.
+
 
 ### Docker Desktop
 
@@ -115,10 +255,13 @@ Foremost, uninstall docker within each WSL (Windows Subsystem for Linux) operati
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 
-[This avoids conflicts](https://docs.docker.com/desktop/wsl/#:~:text=To%20avoid%20any%20potential%20conflicts).  Subsequently, [install Docker Desktop](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop).  Read [...](https://www.docker.com/products/docker-desktop/alternatives/) for an outline of the advantages of Docker Desktop vis-à-vis Docker Engine.
+[This avoids conflicts](https://docs.docker.com/desktop/wsl/#:~:text=To%20avoid%20any%20potential%20conflicts).  Subsequently, [install Docker Desktop](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop).  Read [...](https://www.docker.com/products/docker-desktop/alternatives/) for an outline of the advantages of Docker Desktop vis-à-vis Docker Engine.  References
 
-<br>
-<br>
+* [Docker running?](https://docs.docker.com/config/daemon/troubleshoot/#check-whether-docker-is-running)
+* [Command Line Reference](https://docs.docker.com/engine/reference/run/)
+* [Containerize an application](https://docs.docker.com/get-started/02_our_app/)
+* [Introducing the Docker Desktop WSL (Windows Subsystem for Linux) 2 Backend](https://www.docker.com/blog/new-docker-desktop-wsl2-backend/)
+
 
 ### NVIDIA Docker
 
@@ -150,8 +293,6 @@ sudo apt update
 sudo apt install -y nvidia-docker2
 ```
 
-<br>
-<br>
 
 ### NVIDIA [Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/index.html)
 
@@ -218,156 +359,17 @@ cat /etc/os-release
 
 prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a` or `cat /etc/issue`.
 
-<br>
-<br>
+### Development Containers
 
-## Virtual Environments
+* https://containers.dev/implementors/json_reference/
+* https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
+* https://code.visualstudio.com/docs/devcontainers/tutorial
+* [Containers & Security](https://www.baeldung.com/ops/root-user-password-docker-container)
+* [Docker Reference](https://docs.docker.com/engine/reference/run/)
+* [Images, Dockerfiles, & Docker Compose](https://containers.dev/guide/dockerfile)
+* [WSL (Windows Subsystem for Linux): Develop in Remote Containers](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#develop-in-remote-containers-using-vs-code)
+* [Conda & Dockerfile](https://pythonspeed.com/articles/activate-conda-dockerfile/)
 
-<br>
-
-### Software: `miniconda`
-
-Foremost, check the python version
-
-```shell
-python --version
-```
-
-#### Get
-
-Subsequently, `get` the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers) relative to the system's python version, e.g.,
-
-```shell
-# if python 3.10.*
-sudo wget -P Downloads https://repo.anaconda.com/miniconda/Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
-cd Downloads
-sudo chmod +x Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
-```
-
-#### Install
-
-Install in the specified directory
-
-```shell
-# Include <-b> for automatic acceptance of the terms & conditions
-sudo bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh -p /opt/miniconda3
-
-$ Do you wish the installer to initialize Miniconda3 by running conda init?
->>> no
-```
-
-#### Path Variable
-
-Open `/etc/profile`, i.e.,
-
-```shell
-sudo vi profile
-```
-
-and append
-
-```bash
-if ! [[ $PATH =~ "/opt/miniconda3/bin" ]]; then
-	PATH="/opt/miniconda3/bin:$PATH"
-fi
-```
-
-The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).  **Exit** the terminal.
-
-#### Set-up
-
-Next, within a new terminal
-
-```shell
-conda init bash
-conda config --set auto_activate_base false
-sudo chown -R $USER:$USER /opt/miniconda3
-```
-
-<br>
-<br>
-
-### A sample *Tensorflow GPU (Graphics Processing Unit)* virtual environment
-
-Foremost, a virtual conda environment for tensorflow - within a WSL (Windows Subsystem for Linux) operating system ...
-
-```shell
-conda create --prefix /opt/miniconda3/envs/tensors python=3.11
-```
-
-Next, activate the environment then inspect ...
-
-```shell
-conda activate tensors
-python -m pip list
-conda list
-```
-
-Next, the core/background installations for tensorflow ... `cudatoolkit` & `cuDNN`
-
-```shell
-conda install -c conda-forge cudatoolkit=11.8.0
-python -m pip install nvidia-cudnn-cu11==8.6.0.163
-
-# Additionally (verification via ptxas --version)
-conda install -c nvidia cuda-nvcc --yes
-ptxas --version
-```
-
-... hence, the setting-up of their path variables
-
-```shell
-# ascertain that this variable has a value
-echo $CONDA_PREFIX
-
-# subsequently
-mkdir -p $CONDA_PREFIX/etc/conda/activate.d
-
-echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))' \
-  >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-  
-echo 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH' \
-  >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-```
-
-... and probably
-
-```shell
-echo 'export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib' \
-  >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-```
-
-Additionally ...
-
-```commandline
-cd C:\Windows\System32\lxss\lib
-del libcuda.so
-del libcuda.so.1
-mklink libcuda.so libcuda.so.1.1
-mklink libcuda.so.1 libcuda.so.1.1
-```
-
-<br>
-
-Now, **install `tensorflow`**
-
-```shell
-pip install tensorflow==2.12.*
-```
-
-Perhaps [TensorRT](https://www.tensorflow.org/install/pip#windows-wsl2:~:text=improve%20latency%20and%20throughput%20for%20inference)
-
-```shell
-pip install --upgrade tensorrt
-```
-
-The upcoming sample project depends on ...
-
-```shell
-pip install "dask[complete]"
-pip install scikit-learn
-pip install pytest coverage pylint pytest-cov flake8
-```
 
 <br>
 <br>

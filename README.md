@@ -52,6 +52,8 @@ There are [settings for different languages](https://www.sphinx-doc.org/en/maste
 * [book theme](https://sphinx-book-theme.readthedocs.io/en/stable/customize/sidebar-secondary.html)
 * [sphinx build](https://www.sphinx-doc.org/en/master/man/sphinx-build.html)
 * [customising](https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html#adding-custom-css-or-javascript-to-sphinx-documentation)
+* [`revitron`](https://github.com/revitron/revitron-sphinx-theme/blob/master/README.rst)
+* [Special Characters](https://www.toptal.com/designers/htmlarrows/letters/)
 
 <br>
 
