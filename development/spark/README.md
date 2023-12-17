@@ -215,12 +215,23 @@ scala -version
 
 <br>
 
-### Spark
+## Spark
+
+### Installing: Spark
 
 ```shell
 sudo wget -P Downloads https://dlcdn.apache.org/spark/spark-3.4.2/spark-3.4.2-bin-hadoop3-scala2.13.tgz
 sudo tar -xzvf Downloads/spark-3.4.2-bin-hadoop3-scala2.13.tgz -C /opt
 sudo mv /opt/spark-3.4.2-bin-hadoop3-scala2.13/ /opt/spark/
+```
+
+### Environment Variables: Spark
+
+Edit `~/.bashrc` by appending
+
+```shell
+export SPARK_HOME=/opt/spark
+export PATH="$SPARK_HOME/bin:$PATH"
 ```
 
 <br>
