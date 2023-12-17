@@ -16,6 +16,7 @@ Building Data Science / Machine Learning Products
 * [Catalog of requirements for AI products](https://towardsdatascience.com/catalog-of-requirements-for-ai-products-bae95ae50e85) 
   * [GitHub](https://github.com/ttzt/catalog_of_requirements_for_ai_products)
   * [Volere Specification Template](https://homepages.laas.fr/kader/Robertson.pdf)
+* [Enterprise Architecture’s Role in Building a Data-Driven Organization](https://www.gartner.com/smarterwithgartner/enterprise-architectures-role-in-building-a-data-driven-organization)
 
 <br>
 
