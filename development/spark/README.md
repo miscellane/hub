@@ -16,6 +16,9 @@
 * [scala](#scala)
   * [Installing](#installing-scala)
   * [Environment Variables](#environment-variables-scala)
+* [spark](#spark)
+  * [Installing](#installing-spark)
+  * [Environment Variables](#environment-variables-spark)
 
 
 <br>
