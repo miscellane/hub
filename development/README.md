@@ -31,7 +31,11 @@ printenv
 * [wget](#wget)
 * [GIT](#git)
 * [CONDA](#conda)
-* [IntelliJ IDEA](#intellij-idea)
+* [Integrated Development Environment](#integrated-development-environment)
+  * [IntelliJ IDEA](#intellij-idea)
+  * [Visual Studio Code](#visual-studio-code)
+  * [Jupyter Lab](#jupyter-lab)
+  * [Cloud Environments](#cloud-environments)
 * [NVIDIA](#nvidia)
 * [Docker & JAX](#docker--jax)
 * [Docker, NVIDIA, Windows 11, & Windows Subsystem for Linux Kernels](#docker-nvidia-windows-11--windows-subsystem-for-linux-kernels)
@@ -195,8 +199,6 @@ https://code.visualstudio.com/docs/python/environments
 * [Docker for Data Science](https://github.com/docker-for-data-science)
 * [Supercharging AI/ML Development with JupyterLab and Docker](https://www.docker.com/blog/supercharging-ai-ml-development-with-jupyterlab-and-docker/)
 
-
-
 ### Cloud Environments
 
 **Google Colab**
@@ -210,7 +212,6 @@ https://docs.github.com/en/codespaces/troubleshooting
 https://docs.github.com/en/codespaces#all-docs
 https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
 https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces
-
 
 <br>
 
@@ -257,6 +258,7 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 [This avoids conflicts](https://docs.docker.com/desktop/wsl/#:~:text=To%20avoid%20any%20potential%20conflicts).  Subsequently, [install Docker Desktop](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop).  Read [...](https://www.docker.com/products/docker-desktop/alternatives/) for an outline of the advantages of Docker Desktop vis-à-vis Docker Engine.  References
 
 * [Docker running?](https://docs.docker.com/config/daemon/troubleshoot/#check-whether-docker-is-running)
+* [Command Line Reference](https://docs.docker.com/engine/reference/run/)
 * [Containerize an application](https://docs.docker.com/get-started/02_our_app/)
 * [Introducing the Docker Desktop WSL (Windows Subsystem for Linux) 2 Backend](https://www.docker.com/blog/new-docker-desktop-wsl2-backend/)
 
