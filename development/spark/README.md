@@ -261,6 +261,12 @@ Hence
 spark-submit --version
 ```
 
+If necessary, set [spark environment variables](https://spark.apache.org/docs/3.4.2/configuration.html#environment-variables) such as the `SPARK_LOCAL_IP` address within `spark-env.sh`.  To create `spark-env.sh`
+
+* Make a copy of the template `/opt/spark/conf/spark-env.sh.template`, saving it as `spark-env.sh` within the same directory, i.e., directory `/opt/spark/conf`.
+* Edit `/opt/spark/conf/spark-env.sh` as required
+
+
 <br>
 <br>
 
