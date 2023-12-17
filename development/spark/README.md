@@ -174,6 +174,12 @@ Subsequently, reload the environment variables via command
 source ~/.bashrc
 ```
 
+Hence
+
+```shell
+hadoop version
+```
+
 <br>
 
 ## Scala
