@@ -5,7 +5,14 @@
 <br>
 
 * [java](#java)
+  * [Installing](#installing-java)
+  * [Environment Variables](#environment-variables-java)
 * [maven](#maven)
+  * [Installing](#installing-maven)
+  * [Environment Variables](#environment-variables-maven)
+* [hadoop](#hadoop)
+  * [Installing](#installing-hadoop)
+  * [Environment Variables](#environment-variables-hadoop)
 
 <br>
 
@@ -14,7 +21,7 @@
 References
 * [Installing JAVA](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-22-04)
 
-### Installing
+### Installing: Java
 
 ```shell
 # jdk & jre
@@ -23,9 +30,9 @@ java --version
 javac --version
 ```
 
-### Setting Environment Variables
+### Environment Variables: Java
 
-The variable of interest is the `JAVA_HOME` variable, which depends on the installation directory string, i.e.,
+The environment variable of interest is the `JAVA_HOME` variable, which depends on the installation directory string, i.e.,
 
 ```shell
 sudo update-alternatives --config java
@@ -70,7 +77,7 @@ References
 * [Apache Maven](https://maven.apache.org/index.html)
 * [Maven Installation Guide](https://www.baeldung.com/install-maven-on-windows-linux-mac) by Baeldung
 
-### Installing
+### Installing: Maven
 
 ```shell
 # get
@@ -99,7 +106,7 @@ Selections
 > Use archive file or device ARCHIVE.
 
 
-### Setting Environment Variables
+### Environment Variables: Maven
 
 Edit `~/.bashrc` by appending
 
@@ -126,7 +133,8 @@ mvn -version
 
 ## HADOOP
 
-References
+### Installing: Hadoop
+
 * [Installing](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Installing_Software)
 
 ```shell
@@ -138,6 +146,28 @@ sudo tar -xzvf Downloads/hadoop-3.3.6.tar.gz -C /opt
 
 # https://linux.die.net/man/1/mv
 sudo mv /opt/hadoop-3.3.6/ /opt/hadoop/
+```
+
+### Environment Variables: Hadoop
+
+Edit `/etc/hadoop/hadoop-env.sh`; ref. [Environment Variables: Java](#environment-variables-java)
+
+```shell
+export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
+export HADOOP_HOME=/opt/hadoop
+```
+
+Edit `~/.bashrc` by appending
+
+```shell
+export HADOOP_HOME=/opt/hadoop 
+export PATH="$HADOOP_HOME/bin:$PATH"
+```
+
+Subsequently, reload the environment variable via command
+
+```shell
+source ~/.bashrc
 ```
 
 <br>
