@@ -27,19 +27,14 @@ Preliminaries
 
 This page uses the linux commands `tar` & `mv`, alongside command parameters.  **In the case of** `tar`, [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html), the pages uses **operations parameters**
 
-> -x, --extract, --get <br>
-> Extract files from an archive.
+> -x, --extract, --get [Extract files from an archive.]
 
 **options parameters**
-> -z, --gzip, --gunzip, --ungzip <br>
-> Filter the archive through gzip.
->
-> -v, --verbose <br>
-> Verbosely list files processed.
+> -z, --gzip, --gunzip, --ungzip [Filter the archive through gzip.]
+> -v, --verbose [Verbosely list files processed.]
 
 and **selections parameters**
-> -f, --file=ARCHIVE <br>
-> Use archive file or device ARCHIVE.
+> -f, --file=ARCHIVE [Use archive file or device ARCHIVE.]
 
 <br>
 
