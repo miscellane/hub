@@ -13,6 +13,8 @@
 * [hadoop](#hadoop)
   * [Installing](#installing-hadoop)
   * [Environment Variables](#environment-variables-hadoop)
+* [scala](#scala)
+
 
 <br>
 
@@ -117,7 +119,7 @@ export MAVEN_OPTS=-Xmx512m
 export PATH="$M2:$PATH"
 ```
 
-Subsequently, reload the environment variable via command
+Subsequently, reload the environment variables via command
 
 ```shell
 source ~/.bashrc
@@ -164,7 +166,34 @@ export HADOOP_HOME=/opt/hadoop
 export PATH="$HADOOP_HOME/bin:$PATH"
 ```
 
-Subsequently, reload the environment variable via command
+Subsequently, reload the environment variables via command
+
+```shell
+source ~/.bashrc
+```
+
+<br>
+
+## Scala
+
+### Installing: Scala
+
+```shell
+sudo wget -P Downloads https://downloads.lightbend.com/scala/2.13.12/scala-2.13.12.tgz
+sudo tar -xzvf Downloads/scala-2.13.12.tgz -C /opt
+sudo mv /opt/scala-2.13.12/ /opt/scala/
+```
+
+### Environment Variables: Scala
+
+Edit `~/.bashrc` by appending
+
+```shell
+export SCALA_HOME=/opt/scala 
+export PATH="$SCALA_HOME/bin:$PATH"
+```
+
+Subsequently, reload the environment variables via command
 
 ```shell
 source ~/.bashrc
