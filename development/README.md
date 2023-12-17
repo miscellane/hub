@@ -186,6 +186,17 @@ https://code.visualstudio.com/docs/containers/quickstart-python
 https://code.visualstudio.com/docs/devcontainers/create-dev-container
 https://code.visualstudio.com/docs/python/environments
 
+### Jupyter Lab
+
+* [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
+  * https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#image-relationships
+  * https://jupyter-docker-stacks.readthedocs.io/en/latest/using/running.html
+* [GPU Jupyter](https://github.com/iot-salzburg/gpu-jupyter)
+* [Docker for Data Science](https://github.com/docker-for-data-science)
+* [Supercharging AI/ML Development with JupyterLab and Docker](https://www.docker.com/blog/supercharging-ai-ml-development-with-jupyterlab-and-docker/)
+
+
+
 ### Cloud Environments
 
 **Google Colab**
