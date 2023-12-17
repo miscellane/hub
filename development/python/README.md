@@ -1,6 +1,9 @@
 <br>
 
-**Python Environments**
+* [Python & Docker](#python--docker)
+* [Tensorflow](#tensorflow)
+  * [GPU (Graphics Processing Unit) Computing Environment](#gpu-graphics-processing-unit-computing-environment)
+* [References](#references)
 
 <br>
 
@@ -13,6 +16,8 @@ Notes:
 
 ## Tensorflow
 
+References:
+
 * [Images](https://hub.docker.com/r/tensorflow/tensorflow/tags)
   * https://www.tensorflow.org/install/docker
 * [Tensorflow & Windows Subsystem for Linux (WSL)](https://www.tensorflow.org/install/pip#windows-wsl2)
@@ -20,6 +25,7 @@ Notes:
 * [Theoretical and advanced machine learning with TensorFlow](https://www.tensorflow.org/resources/learn-ml/theoretical-and-advanced-machine-learning)
 * [Images](https://www.tensorflow.org/tutorials/load_data/images)
 
+<br>
 
 ### GPU (Graphics Processing Unit) Computing Environment
 
