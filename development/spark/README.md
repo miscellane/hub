@@ -255,6 +255,12 @@ Subsequently, reload the environment variables via command
 source ~/.bashrc
 ```
 
+Hence
+
+```shell
+spark-submit --version
+```
+
 <br>
 <br>
 
