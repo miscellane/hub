@@ -14,6 +14,8 @@
   * [Installing](#installing-hadoop)
   * [Environment Variables](#environment-variables-hadoop)
 * [scala](#scala)
+  * [Installing](#installing-scala)
+  * [Environment Variables](#environment-variables-scala)
 
 
 <br>
