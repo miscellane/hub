@@ -207,6 +207,12 @@ Subsequently, reload the environment variables via command
 source ~/.bashrc
 ```
 
+Hence
+
+```shell
+scala -version
+```
+
 <br>
 <br>
 
