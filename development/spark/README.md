@@ -23,9 +23,7 @@
 
 <br>
 
-Preliminaries
-
-This page uses the linux commands `tar` & `mv`, alongside command parameters.  **In the case of** [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html) the pages uses **operations parameters**
+Note, this page uses the linux commands `tar` & `mv`, alongside command parameters.  **In the case of** [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html) the pages uses **operations parameters**
 
 > -x, --extract, --get [Extract files from an archive.]
 
