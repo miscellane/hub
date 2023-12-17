@@ -234,6 +234,12 @@ export SPARK_HOME=/opt/spark
 export PATH="$SPARK_HOME/bin:$PATH"
 ```
 
+Subsequently, reload the environment variables via command
+
+```shell
+source ~/.bashrc
+```
+
 <br>
 <br>
 
