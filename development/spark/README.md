@@ -23,6 +23,35 @@
 
 <br>
 
+Preliminaries
+
+This page uses the linux commands `tar` & `mv`, alongside command parameters.  In the case of `tar`, [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html),
+
+Operations
+> -x, --extract, --get <br>
+> Extract files from an archive.
+
+Options
+> -z, --gzip, --gunzip, --ungzip <br>
+> Filter the archive through gzip.
+>
+> -v, --verbose <br>
+> Verbosely list files processed.
+
+Selections
+> -f, --file=ARCHIVE <br>
+> Use archive file or device ARCHIVE.
+
+In the case of `mv`, [mv](https://linux.die.net/man/1/mv), a command of the form
+
+> sudo mv /opt/preliminary/ /opt/initial/
+
+means directory `preliminary` will be renamed `initial`.
+
+
+<br>
+
+
 ## JAVA
 
 References
@@ -76,7 +105,9 @@ JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 
 The command `i` starts the edit mode, `ESC` exits the mode, and `:wq` saves; [`vi` commands](https://www.cs.colostate.edu/helpdocs/vi.html).
 
+
 <br>
+
 
 ## MAVEN
 
@@ -89,29 +120,9 @@ References
 ```shell
 # get
 sudo wget -P Downloads https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
-
-# https://www.man7.org/linux/man-pages/man1/tar.1.html
 sudo tar -xzvf apache-maven-3.9.6-bin.tar.gz -C /opt
-
-# https://linux.die.net/man/1/mv
 sudo mv /opt/apache-maven-3.9.6/ /opt/maven/
 ```
-
-Operations
-> -x, --extract, --get <br>
-> Extract files from an archive.
-
-Options
-> -z, --gzip, --gunzip, --ungzip <br>
-> Filter the archive through gzip.
->
-> -v, --verbose <br>
-> Verbosely list files processed.
-
-Selections
-> -f, --file=ARCHIVE <br>
-> Use archive file or device ARCHIVE.
-
 
 ### Environment Variables: Maven
 
@@ -136,7 +147,9 @@ Hence
 mvn -version
 ```
 
+
 <br>
+
 
 ## HADOOP
 
@@ -145,13 +158,8 @@ mvn -version
 * [Installing](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Installing_Software)
 
 ```shell
-# get
 sudo wget -P Downloads https://dlcdn.apache.org/hadoop/common/stable/hadoop-3.3.6.tar.gz
-
-# https://www.man7.org/linux/man-pages/man1/tar.1.html
 sudo tar -xzvf Downloads/hadoop-3.3.6.tar.gz -C /opt
-
-# https://linux.die.net/man/1/mv
 sudo mv /opt/hadoop-3.3.6/ /opt/hadoop/
 ```
 
@@ -183,7 +191,9 @@ Hence
 hadoop version
 ```
 
+
 <br>
+
 
 ## Scala
 
@@ -216,7 +226,9 @@ Hence
 scala -version
 ```
 
+
 <br>
+
 
 ## Spark
 
