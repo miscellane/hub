@@ -22,8 +22,7 @@ Building Data Science / Machine Learning Products
 
 **Principles**
 
-The FAIR Guiding Principles for scientific data management and stewardship (https://www.nature.com/articles/sdata201618)
-Model Cards for Model Reporting
+* [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
 * [Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993)
   * [In Practice](https://modelcards.withgoogle.com/about)
 * [Organisation for Economic Co-operation and Development (OECD) Catalogue](https://oecd.ai/en/catalogue/tools
