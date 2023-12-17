@@ -25,24 +25,25 @@
 
 Preliminaries
 
-This page uses the linux commands `tar` & `mv`, alongside command parameters.  In the case of `tar`, [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html),
+This page uses the linux commands `tar` & `mv`, alongside command parameters.  **In the case of** `tar`, [tar](https://www.man7.org/linux/man-pages/man1/tar.1.html), the pages uses **operations parameters**
 
-Operations
 > -x, --extract, --get <br>
 > Extract files from an archive.
 
-Options
+**options parameters**
 > -z, --gzip, --gunzip, --ungzip <br>
 > Filter the archive through gzip.
 >
 > -v, --verbose <br>
 > Verbosely list files processed.
 
-Selections
+and **selections parameters**
 > -f, --file=ARCHIVE <br>
 > Use archive file or device ARCHIVE.
 
-In the case of `mv`, [mv](https://linux.die.net/man/1/mv), a command of the form
+<br>
+
+**In the case of** `mv`, [mv](https://linux.die.net/man/1/mv), a command of the form
 
 > sudo mv /opt/preliminary/ /opt/initial/
 
