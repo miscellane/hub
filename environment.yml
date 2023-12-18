@@ -1,4 +1,4 @@
-name: transcribing
+name: hub
 channels:
   - conda-forge
 dependencies:
