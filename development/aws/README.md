@@ -1,12 +1,18 @@
 
+<br>
 
+Amazon Web Services (AWS)
 
-AWS Toolkit for Visual Studio Code
+<br>
 
+## AWS Toolkit for Visual Studio Code
+
+* [About](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html)
 * [Set Up](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setup-toolkit.html)
 
+<br>
 
-AWS SAM (Serverless Application Model) CLI
+## AWS SAM (Serverless Application Model) CLI
 
 [Installing](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
 
@@ -23,3 +29,15 @@ Within the `sam` directory
 sudo ./install
 sam --version
 ```
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
