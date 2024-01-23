@@ -11,6 +11,8 @@
 
 Notes:
 * [Base Images](https://pythonspeed.com/articles/base-image-python-docker-images/)
+* [Docker Official Images: Python](https://hub.docker.com/_/python/)
+  * [A production set-up example](https://github.com/discourses/augmentation/blob/master/Dockerfile)
 
 <br>
 
@@ -117,7 +119,8 @@ pip install pytest coverage pylint pytest-cov flake8
 * [pip](https://pip.pypa.io/en/stable/)
 * [Python Package Index](https://pypi.org)
 * [Python & Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial)
-
+* [NumFocus Sponsored Projects](https://numfocus.org/sponsored-projects)
+  * [pandas](https://pandas.pydata.org)
 
 <br>
 <br>
