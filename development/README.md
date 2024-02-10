@@ -160,15 +160,19 @@ conda update -n base -c anaconda conda
 
 ### IntelliJ IDEA
 
+Either
+
 ```shell
-# get
 sudo wget -P Downloads https://download.jetbrains.com/idea/ideaIC-2022.3.3.tar.gz
 sudo tar -xzf ideaIC-2022.3.3.tar.gz -C /opt 
-
-# starting within idea bin
-cd .../bin
+cd /opt/{idea parent directory}/bin
 ./idea.sh
 ```
+
+or use [snap](https://snapcraft.io).
+
+* [Install Snap Package on Linux](https://www.jetbrains.com/help/idea/installation-guide.html#snap)
+* [Snap Quick Start](https://snapcraft.io/docs/quickstart-tour)
 
 References:
 * [Connecting Docker](https://www.jetbrains.com/help/idea/docker.html#connect_to_docker)
