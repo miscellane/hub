@@ -21,6 +21,12 @@ Resources:
 * https://www.scottishairquality.scot/latest/summary
 * https://www.scottishairquality.scot/air-quality/monitoring
 * https://www.scottishairquality.scot/data/data-selector
+* https://www.scottishairquality.scot/data/trends
+* https://www.scottishairquality.scot/air-quality/monitoring#locations
+* https://environmentalstandards.scot/wp-content/uploads/2022/09/20220929-ESS-AIR-QUALITY-INVESTIGATION-REPORT-IESS.21.013.pdf
+* https://www.heraldscotland.com/news/22843693.scotland-pollution-watchdog-highlights-continued-failure-air-quality-limits/
+
+
 
 <br>
 

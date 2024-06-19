@@ -121,6 +121,11 @@ pip install pytest coverage pylint pytest-cov flake8
 * [Python & Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial)
 * [NumFocus Sponsored Projects](https://numfocus.org/sponsored-projects)
   * [pandas](https://pandas.pydata.org)
+* EXCEL
+  * www.shellhacks.com/python-download-file-from-url-save/
+  * https://stackoverflow.com/questions/25415405/downloading-an-excel-file-from-the-web-in-python
+  * https://stackoverflow.com/questions/65958071/send-xls-file-to-s3-in-python
+  * https://crashlaker.github.io/programming/2020/06/11/pandas_write_xlsx_to_s3.html
 
 <br>
 <br>
