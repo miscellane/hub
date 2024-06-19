@@ -24,6 +24,12 @@ Print environment variables via
 printenv
 ```
 
+Transfers in between Windows & Windows Subsystem for Linux (WSL).  Specifically, transferring documents between Windows and a WSL Linux Kernel
+
+```shell
+cp /mnt/../../compose.yaml /home/../..
+```
+
 <br>
 
 **CONTENT**
@@ -365,6 +371,7 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 
 ### Development Containers
 
+In general:
 * https://containers.dev/implementors/json_reference/
 * https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container
 * https://code.visualstudio.com/docs/devcontainers/tutorial
@@ -373,6 +380,10 @@ prints the Ubuntu version, amongst other details; alternatively, `lsb_release -a
 * [Images, Dockerfiles, & Docker Compose](https://containers.dev/guide/dockerfile)
 * [WSL (Windows Subsystem for Linux): Develop in Remote Containers](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#develop-in-remote-containers-using-vs-code)
 * [Conda & Dockerfile](https://pythonspeed.com/articles/activate-conda-dockerfile/)
+
+Docker <span title="command line interface">CLI</span> [Reference](https://docs.docker.com/reference/cli/docker/):
+* [Container Volumes](https://docs.docker.com/reference/cli/docker/volume/create/)
+
 
 
 <br>
